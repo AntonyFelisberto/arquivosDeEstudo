@@ -1,0 +1,49 @@
+
+seu objetivo é resolver o problema de comunicação entre o time de desenvolvimento
+
+é um processo colaborativo que envolve membros do time com diferentes perspectivas 
+PO,QA,DEV,UX para entender e refinar os requisitos do cliente atraves de conversas sobre exemplos de uso e comportamento do sistema
+
+visa integrar regra de negócio com linguagem de programação
+
+RUNNER > FEATURES > STEPS > PAGES
+
+pageObject- cada pagina do seu sistema é uma classe
+
+criação do teste
+
+cada classe @nome é uma classe do JUNIT executada pelo cucumber que dita as funcionalidades dos testes
+
+@teste 
+  Funcionalidade
+	listas para complementar como vai acontecer o processo
+
+  @nomedoteste ou @test(apenas se for outro tipo de test)
+	Cenario:nome do cenario
+		nomeDoTeste   parametro a ser passado 
+   		nomeDoTeste   parametro a ser passado 
+		nomeDoTeste   parametro a ser passado 
+		nomeDoTeste   parametro a ser passado
+
+  @nomedoteste ou @test(apenas se for outro tipo de test)
+	Cenario:nome do cenario
+		nomeDoTeste   parametro a ser passado 
+   		nomeDoTeste   parametro a ser passado 
+		nomeDoTeste   parametro a ser passado 
+		nomeDoTeste   parametro a ser passado
+  @nomedoteste ou @test(apenas se for outro tipo de test)
+	Cenario:nome do cenario...............  
+
+ex
+  @test
+   Funcionalidade: Realizar Compra no E-commerce
+        //lista do caso de uso
+	Como um comprador
+	Quero ver a lista de produtos disponiveis
+	Para que eu possa escolher qual devo comprar
+		
+   Cenario: Adicionar produto ao carrinho
+  	Dado que um usuario acessa o site "http://automationpractice.com" //dados de entrada, o que esta nas "" é o parametro que vai ser passado
+  	E pesquisa pelo produto "Blouse"                                  //você poderia ter varios E, o que esta nas "" é o parametro que vai ser passado
+  	Quando adiciona o produto "Blouse" ao carrinho			  //ação que deve ser feita,o que esta nas "" é o parametro que vai ser passado
+  	Entao o produto "Blouse" deve estar presente no carrinho	  //ação que deve realizar,o que esta nas "" é o parametro que vai ser passado

@@ -1,0 +1,276 @@
+﻿https://aws.amazon.com/pt/getting-started
+https://aws.amazon.com/pt/getting-started/fundamentals-core-concepts/?e=gs2020&p=fundoverview
+https://www.itexams.com/exam/AWS%20Certified%20Cloud%20Practitioner
+https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Sample-Questions.pdf
+https://www.aws.training/Details/eLearning?id=60697
+https://www.aws.training/
+
+# Amazon Web Services (AWS)
+
+## Cloud computing e on-premises
+
+### Cloud computing
+
+- Recursos computacionais (servidores) sob demanda.
+- Manipulado e consumido pela internet.
+- Não se investe antecipadamente, mas se paga pelo que se usa.
+
+### On-premises
+
+- **Data centers**: área que concentra servidores (processamento/armazenamento), com um sistema complexo de rede.
+- **On-premises**: data centers locais, que necessitam investimento adiantado e mais cuidados e têm escalabilidade difícil.
+
+### Cloud vs on-premises
+
+|                          | Cloud                  | On-premises            |
+| ------------------------ | ---------------------- | ---------------------- |
+| **Infraestrutura**       | Terceirizada           | Primarizada            |
+| **Investimento inicial** | Não existe             | Necessário             |
+| **Despezas**             | Pague o que usar       | Despezas fixas         |
+| **Segurança**            | Garantida              | Responsabilidade local |
+| **Flexibilidade**        | Depende de ferramentas | Depende de burocracia  |
+| **Disponibilidade**      | Garantida              | Responsabilidade local |
+| **Manutenção**           | Voltada ao software    | Inclui hardware        |
+
+## Modelos de funcionamento AWS
+
+### Modelos de serviços
+
+- **On-premises**: precisa cuidar de tudo.
+- **Infrastructure as a service (IaaS)**: cuida de virtualização, servidores, armazenamento e rede. EC2 na AWS.
+- **Platform as a service (PaaS)**: cuida de runtime, middleware e SO. Precisa cuidar da aplicação e dos dados.
+- **Software as a service (SaaS)**: cuida de tudo e dá uma aplicação pronta.
+
+### Serviços cloud AWS
+
+- **Compute**: EC2 (IaaS), Lambda (FaaS).
+- **Storage & content delivery**: cloud front (entrega de conteúdo estático), glacer (dados de acesso não frequente).
+- **Database**: dynamoDB (DB da amazon), RDS (DBs tradicionais), aurora (PostgreSQL/mySQL otimizados), headshift (silos de dados), elastic cache (dados em memória).
+- **Networking**: route S3(DNS), VPC (sub-redes), direct conect (P2P seguro).
+- **Administration & security**: AWSIAN (políticas de usuários/grupos/acessos), cloudWatch (métricas).
+- **Deployment & management**: cloudFormation(criar/destruir ambientes), cloudDeploy (deploy de código).
+- **Analytics**: kinesis (análise de dados).
+- **Application services**: SQS (mensagens).
+- **Mobile services**: cognito (autenticação, dentre outros).
+- **Enteprise services**: webmail (e-mail na amazon).
+
+### Modelo de segurança
+
+- AWS garante segurança do hardware e infraestrutura interna.
+- Cliente deve se responsabilizar pelo acesso e criptografia dos dados, configuração de SO, firewall, etc.
+
+### Regiões e zonas
+
+- Regiões `>` zonas de disponibilidade `>` data centers.
+- Data centers da AWS não são acessados pelos clientes, mas por data centers de empresas parcerias, chamados Edge POP.
+
+## Identity and Access Management (IAM).
+
+- Cria e gerencia usuários e grupos.
+- Concede e nega acesso a recursos.
+- Controla a porta de entrada do servidor.
+
+### Características
+
+- Cria usuários e concede credenciais, que dão acesso a recursos e serviços AWS.
+- Controla o que cada usuário pode fazer.
+- Pode importar usuários e permissões, já existentes em outros ambientes, usando SAML 2.0.
+
+### Usuários, grupos, políticas e permissões
+
+- **Users\***: entidade criada na AWS, devendo ser usada por uma única pessoa ou aplicação.
+- **Groups**: conjunto de users, permite gerenciar os privilégios de seus membros de uma vez.
+- **Roles\***: ações que um usuário pode ou não fazer.
+- **Policies\***: o que é ou não permitido a certas entidades, formado por roles.
+
+### Boas práticas IAM
+
+- Dar acesso ao usuário somente do necessário.
+- Privilégios somente através de groups e polices.
+- Não depender de infra externa.
+- Seguir princípio do menor privilégio.
+- Não logar em aplicações com as credenciais IAM.
+- Usar MFA para conta root.
+- Usar conta root somente para configuração inicial.
+- Não compartilhar credenciais.
+- Somente uma pessoa usar um user IAM.
+
+## Segurança VPC
+
+- VPC é uma rede virtual.
+- **Sub-redes**: define ranges de IPs, pode ser um virtual private gateway para acessos entre VPCs.
+- **Netowork Access Control List (NACLs)**: controla inbound e outbound, associado a sub-redes, aplicado a instâncias na mesma sub-rede.
+
+### Segurity Group
+
+- Facilita criar um firewall virtual para um grupo de instâncias.
+- Configura acesso de acordo com serviço, porta, origem e destino.
+- Possível associar vários grupos a uma instância, valendo a regra do menor privilégio.
+- Padrão saída liberada, entrada proibida.
+- Padrão no inboud, all outbound.
+
+### Elastic IP
+
+- Faz com que, mesmo após reiniciar a instância, o IP continue o mesmo.
+- Até 5 por conta, sem custo adicional.
+
+## Elastic Compute Cloud (EC2)
+
+- Disponibiliza recursos computacionais na cloud, de forma rápida e dimensionável.
+- **On demand**: sem pagamento adiantado nem contrato prévio, pagando o que se usa.
+- **Spot**: modelo leilão (mais caro se tiver mais demanda, perde se outro pagar mais)
+- **Reserved**: paga adiantado e tem que ficar minimo de 1 ano.
+- **Dedicated**: reserva o hardware, controle sobre local e detalhes físicos.
+
+### User data
+
+- Script executado quando a instância é criada, para agilizar tarefas.
+- Sempre executado como root.
+
+### Amazon Machine Image (AMI)
+
+- Template para criar uma ou mais instâncias.
+- AWS possui várias AMIs prontas.
+
+## Elastic Block Storage (EBS)
+
+- Armazenamento persistente para ser usado com EC2.
+
+### Características
+
+- Dados não são perdidos quando a instância é terminada.
+- Pode ser SSD, PIOPS ou HSS.
+- Acessado pela rede interna.
+- Máximo 16 TB.
+- Há redundância, para evitar falhas.
+- Há backup e restore.
+- É flexível.
+
+## EC2 auto scalling
+
+- Dedica mais instâncias em caso de alta carga.
+- Um scalling group precisa de uma imagem e um número máximo e mínimo de instâncias.
+- Pode definir políticas para automatizar subir e derrubar instâncias.
+
+### Componentes
+
+- **Launch configuration**: template para auto scalling, configurado como uma instância única.
+
+### Planos
+
+- Scale out inicia instâncias e scale in termina instâncias.
+- **Manual**: define apenas máximo e mínimo e autoscalling administra.
+- **Agendamento**: define horários para iniciar e terminar.
+- **Sob demanda**: define regras mais avançadas quanto ao uso dos recursos computacionais.
+
+## Elastic Load Balancer (ELB)
+
+- Distribui tráfego entre instâncias EC2.
+- Mantém elas trabalhando por igual.
+- Redireciona tráfego em caso de falha e não manda mais para instâncias com falhas.
+
+### Características
+
+- **Rede**: HTTP, HTTPS, TCP, SSL.
+- **Criptografia**: pode fazer criptografia, no lugar das instâncias.
+- **Monitoramento**: CloudWatch e CoudTrail podem monitorar o ELB.
+- **Segurança**: primeira linha de defesa contra ataques.
+- **Helath check**: instâncias com problemas não recebem tráfego até serem restauradas.
+
+### Tipos
+
+- **Application Load Balancer**: usa grupos alvo e pode rotear tráfego para esses de acordo com vários fatores, como porta, rota na url, etc.
+- **Classic Load Balancer**: registra instâncias com load balancer.
+- **Network Load Balancer**: mais novo, mais poderoso, atua na camada de transporte.
+
+### Connection draining
+
+- Faz instâncias que serão derrubadas terminarem suas requisições antes disso.
+- Instâncias não saudáveis não receberão mais requisições, possibilitando manutenções.
+
+## Relational Database Service (RDS)
+
+- Interace que facilita configurar, escalar e operar bancos de dados.
+- Trabalha com instâncias de bancos de dados.
+
+### Benefícios
+
+- **Administração**: ganha tempo de implantação.
+- **Estalável**: capacidade de armazenamento modificável.
+- **Resiliente e disponível**: infra e hardware mantido pela AWS.
+- **Rápido**: oferece SSD se for pedido.
+- **Seguro**: pode ser fechado na VPC.
+- **Baixo custo**: paga pelo uso.
+
+### Modelos
+
+- Amazon Aurora.
+- PostgreSQL.
+- MySQL.
+- Maria DB.
+- Oracle database.
+- SQL Server.
+- Database Migration Service migra BDs de fora para dentro da AWS.
+
+### Fatores que compõem o preço
+
+- Tempo de atividade.
+- Uso de disco.
+- Volume de transferência de dados.
+- Uso de disco de backup.
+- Volume de requisições de I/O.
+- Classe da instância.
+
+### Monitoramento
+
+- **CloudWatch**: permite criar métricas próprias.
+- **CloudWatch log**: log do DB ou da instância.
+- **Monitoramento amazon RDS**: oferta mais de 50 métricas.
+
+### Migração de banco de dados
+
+- **DMS**: cria uma réplica do banco de dados no RDS.
+- **SCT**: converte schemas para DBs open source para migração.
+
+### Notificação de eventos
+
+- **Simple Notification Service (SNS)**: ferramenta feita par notificações e mensageria.
+- **Destinos**: pode mandar notificações por e-mail, sms, end-point HTTP, etc.
+- **Categorias**: 17 categorias diferentes.
+
+### DynamoDB
+
+- DB NoSQL.
+- Trabalha com chave-valor.
+- Banco de dados como serviço.
+- Cria redundâncias para velocidade.
+
+## S3
+
+- É um object storage, usado para criar repositórios (diretórios).
+- Possui interface web, api e sdk.
+- Resiliência e escalabilidade.
+- Gerenciamento de ciclo de vida dos dados, entre dados quentes e frios.
+- Recursos de segurança e acessibilidade dos dados, com otimização de custos.
+
+### Benefícios
+
+- **Resiliência e disponibilidade**: quase 100%.
+- **Segurança e conformidade**: protege contra acesso não autorizado, bloqueia acesso público, integrado com Amazon Macie.
+- **Consultas locais para análises**: análises de big data, integração com Amazon Athena.
+- **Gerenciamento flexível**: análise de frequência de uso, classifica dados.
+- **Transferência de dados facilitada**: variedade de opções de importação e exportação de dados.
+
+### Características
+
+- Escalável.
+- Durável.
+- Redundância geográfica.
+- Versionamento.
+- Políticas de ciclo de vida.
+
+### Ferramentas
+
+- **AWS S3 select**: reduz custos de consulta ao banco em 80%, com limite de 5 TB, quebrando os objetos e indexando suas partes.
+- **AWS S3 transfer acceleration**: transferência física de dados  para grandes volumes e grandes distâncias.
+- **AWS S3 storage gateway**: para arquiteturas híbridas cloud e on-premises, pode usar o DataSync.

@@ -1,0 +1,7 @@
+			biblioteca android
+
+https://developer.android.com/?hl=pt-br
+https://developer.android.com/studio/intro/keyboard-shortcuts
+https://developer.android.com/studio/debug/layout-inspector
+https://developer.android.com/studio/profile/android-profiler?hl=pt-br
+https://developer.android.com/studio/debug?hl=pt-br#groovy

@@ -1,0 +1,7 @@
+caixa branca: teste por tras da aplicação
+		
+teste de performance,de extress,de carga
+
+caixa preta: você consegue mensurar valida,você consegue ver e asegurar
+
+teste manual,aceitação final,teste de componente,teste funcional,teste de integração

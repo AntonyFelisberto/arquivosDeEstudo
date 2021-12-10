@@ -1,0 +1,27 @@
+overclock-(fazer o processador chegar ao seu limite)
+
+aumenta o desempenho do processador
+
+riscos:
+pode queimar os processadores e deixar tudo inutilizável, os danos podem ser ireparaveis
+em alguns componentes não é possivel o overclock
+
+não usar cooler box-não fazer overclock com cooler box
+
+precisa de fonte de alimentação boa pra fazer
+
+pra fazer você precisa de processador desbloqueado
+-pra saber se seu processador é desbloqueado primeiro você precisa saber qual o modelo é só baixar o CPU-Z
+e depois pra saber se é desbloqueado é só entrar em um dos sites www.cpuboss.com www.cpu-world.com
+
+-a placa mãe precisa disponibilizar recursos pra overclock
+
+-cada placa pode atingir um clock diferente
+
+TESTE DE STRESS
+
+serve pra fazer o seu hardware chegar ao extremo e saber se seu overclock esta estavel
+
+TESTE DE DESEMPENHO
+
+serve pra avaliar o antes e o depois do seu overclock

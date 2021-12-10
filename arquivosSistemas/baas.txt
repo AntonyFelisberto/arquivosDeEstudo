@@ -1,0 +1,7 @@
+baas
+
+backend as a service 
+
+mobile backend as a service
+
+são aplicativos que ja fazem a maior parte por tras do aplicativo ou seja banco de dados e seu código
