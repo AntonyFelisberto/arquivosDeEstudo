@@ -1,0 +1,189 @@
+﻿Processo de negócios
+
+processos de negócio são conjuntos de atividades que produzem serviço ao seus clientes e geram valor pra ele
+é procurar por problemas nos métodos de uma organização e achar uma forma de resolve-los 
+processo(o que vai fazer), métodos(como vai fazer) e ferramentas(o que vai usar pra fazer)
+
+
+não conforme:tudo que esta panejado,mas não acontece como esperado
+
+oportunidade de melhoria:visualizar os erros e corrigir esse processo(melhorar esses processos)
+----------------------------------------------------------------------------------------------------------------------------------------
+cinco forças de porter
+
+1-barreiras de entrada(coisas que te impedem de entrar no ramo tipo economia entre outros)
+2-concorrencia
+3-poder dos compradores(o quanto compradores influenciam o mercado)
+4-poder dos fornecedores(o quanto fornecedores influenciam o mercado)
+5-produtos substitutos(existencia de produtos substitutos)
+-----------------------------------------------------------------------------------------------------------------------------------------
+customer journey-jornada do cliente
+
+é o caminho que uma pessoa passa até se tornar cliente,uma pessoa que chegue até o nivel de conversação
+é necessário a empressa fazer um mapa para entender as dores,motivações,ações e pontos de contato do cliente que interage com seu negócio
+isso traz beneficios como uma experiencia melhor para o cliente(que vai voltar a comprar no seu comercio) e uma vantagem competitiva
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+governancia de ti
+
+é responsavel por colocar a area de ti junto aos objetivos da organização e mostrar como ela pode ser benéfica
+é o modelo como as decisões são tomadas e responsabilidades direcionadas para encorajar um comportamento desejado no uso do ti
+é mais interno,é algo mais pensado pro futuro
+Combinar atividades que área de TI desenvolve com as necessidades e objetivos estratégicos de uma organização
+
+governancia corporativa 
+é a area responsavel pela gestão e tomada de decisões da empresa
+é mais externo,é mais voltada pro processo do negócio
+Conjunto de mecanismos para decisões
+corporativas sejam sempre tomadas com a finalidade de maximizar a perspectiva de geração de valor a longo prazo para o negócio.
+
+Gerenciamento de TI
+Enquanto a governança lida com a estratégia e alinhamento da TI ao negócio, o gerenciamento da TI lida com a operação dos serviços, que precisa
+se preocupar em manter todos os serviços operacionais segundo as exigências de cada um.
+-----------------------------------------------------------------------------------------------------------------------------------------
+itil-como você vai fazer esse processo,define o que fazer,é mais pra parte operacional
+
+colbit-ensina como o processo deve ser feito,define como fazer,é mais pra parte de gestão,mais pra parte estratégica
+
+1. ITIL®: É um conjunto de boas práticas para governança de TI,
+com foco na gestão de serviços.o foco está em determinar como a TI deve prestar os serviços
+
+2. COBIT®: É o framework de gestão e governança de TI desenvolvido pela ISACA.estebelece um conjunto de boas praticas de gestão
+da governancia de TI é voltada para o controle de gestão interna da area de TI
+
+itil define como fazer e cobit o que fazer
+--------------------------------------------------------------------------------------------------------------------------------------
+s w o t-
+
+s->strengths}
+            }interno
+w->weakness }
+
+o->oportunities}
+               }externo
+t->threats     }
+---------------------------------------------------------------------------------------------------------------------------------------------
+BPMN
+
+processo de apoio		 |processos primários		    |processos de gestão 
+                                 |                                  |
+são todos processos que dão      |é o seu processo de negócio       |é a parte que coordena todo o projeto   
+suporte ao seu processo primário |é o processo onde ocorre a        |declarando como deve ser feito e cuidando
+para ser realizado               |produção do produto e como é feito|para que tudo saia como o planejado
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Informação e Sistemas de Informação
+
+entrada----processar----saida
+           classificar
+           organizar
+           calcular
+    |<<<<<<<<<<<<<<<<<<<<|
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+dado-> informação->conhecimento->sabedoria
+
+dado:são fragmentos de informação
+informação:são dados reunidos e organizados
+conhecimento:você recebeu a informação e começa a ter conhecimento da informação
+sabedoria:a partir do momento que você gravou esse conhecimento você tem sabedoria
+-------------------------------------------------------------------------------------------------------------------------------------------
+Funções básicas de uma empresa:
+
+mmrf:marketing,manufatura,rh,finanças<-----PPT:pessoas,processos e tecnologia
+
+Níveis de uma empresa
+1 lugar-gerente senior:cuida de tudo
+2  ||  -gerente média:trabalhadores do conhecimento e cientistas
+3  ||  -gerente operacional:trabalhadores de produção
+------------------------------------------------------------------------------------------------------------------------------------------
+Sistemas integrados
+
+erp->é ele quem reune todas as informações da empresa tudo dentro do sistema, é um bom sistema de gerenciamento pra coordenar toda a empresa
+
+Sistemas de Processamento de Transações (SPT):
+• Realiza e registra as transações rotineiras exemplo: pedidos de vendas, folha de pagamento, reserva de hotel, manutenção funcionário etc.
+
+Sistemas de Informação Gerencial (SIG):
+• Resumem e relatam as operações básicas, usando os dados fornecidos pelos SPT para geração de relatórios de desempenho, fornecendo respostas rotineiras a realização das operações funcionais.
+
+Sistemas de Apoio à Decisão (SAD):
+• Focam em problemas únicos e que se alteram com rapidez para os quais não existe um procedimento de resolução totalmente predefinido, ou seja, apoio as gestores para tomarem decisões 
+  não rotineiras.
+
+Sistemas de Apoio ao Executivo (SAE):
+•Ajudam a gerência sênior (nível estratégico) a tomar decisões não
+rotineiras que exigem assertividade e capacidade de percepção e
+avaliação, uma vez que não existe um procedimento previamente
+estabelecido para se chegar a uma solução.
+• São projetados para incorporarem dados sobre eventos externos,
+como novas leis tributárias, mas também adquirem informações
+resumidas do SIG e SAD.
+
+
+• Aplicativos integrados: são sistemas de informação que
+abrangem todas as áreas (níveis) funcionais da empresa,
+concentrando-se na execução de processos de negócios
+que permeiam toda a empresa e incluem todos os níveis
+de gerência (LAUDON & LAUDON, 2014). São classificados
+em:
+• Sistemas Integrados (ERP - Enterprise Resource Plannin,
+Planejamento de Recursos Empresariais).
+• Sistemas de Gestão da Cadeia de Suprimentos (SCM - Supply
+Chain Management).
+• Sistemas de Gestão do Relacionamento com o Cliente (CRM –
+Customer Relationship Management).
+• Sistemas de Gestão do Conhecimento (KMS - Knowledge
+Management System).
+-----------------------------------------------------------------------------------------------------------------------------------------------
+p  e
+a  c
+
+planejar
+executar
+agir
+controlar
+---------------------------------------------------------------------------------------------------------------------------------------------------
+sw2h
+-o que?
+-por que?
+-quem?
+-quando?
+-como?
+-quanto custa?
+-onde?
+------------------------------------------------------------------------------------------------------------------------------------------------------
+ishikawa
+(você declara as categorias e declara as causas-subcausas dos problemas dessas categorias)  
+1-método
+2-máquina
+3-medida
+4-materiais
+5-mão de obra
+6-meio ambiente
+---------------------------------------------------------------------------------------------------------------------------------------------
+Classificação BPMN
+
+o AS IS – processos de negócio atuais e antigos e
+o TO BE – processos de negócio novos ou propostos. 
+---------------------------------------------------------------------------------------------------------------------------------------------
+NOTAÇÃO BPMN
+
+
+
+()	->circulo significa inicio(verde)/fim(vermelho)
+(0)	->circulo com a bolinha no meio significa que para todas as ações
+ _
+|_|	->quadrado é uma tarefa
+ _
+|+|	->quadrado com o + é um subprocesso
+<>	->Decisor Exclusivo-significa tomada de decisão(na linguagem seria OU)
+<+>     ->Decisor Paralelo-significa tomada de decisão(na linguagem seria E)
+<0>     ->Decisor Inclusivo-significa tomada de decisão(na linguagem seria E/OU)
+
+mensagem                envio e recebimento de mensagem
+simbolo de relógio      controle do tempo das ações
+conectores 		são as flechas que conectam um ponto no outro
+piscina 		é onde está todos os processos e as raias
+raia é onde esta todos os processos 
+---------------------------------------------------------------------------------------------------------------------------------------------------

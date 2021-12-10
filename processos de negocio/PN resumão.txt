@@ -1,0 +1,50 @@
+FCS
+
+tudo que o processo tem que ter para que tenha sucesso
+
+exemplo lan house:
+
+pcs
+internet 
+mesas
+boa localidade
+bom nome.....
+
+• GQM: Goal-Question-Metric
+
+g-objetivo que planeja alcançar
+  exemplo-comprar um carro
+
+q-questões para chegar ao resultado do objetivo
+  exemplo-qual o nome do carro?quanto ele custa?quanto você pretende gastar?
+
+m-quanto você tem se saido para chegar ao objetivo
+  exemplo-aumentei a carga horaria de 8 horas pra 9 horas diarias
+
+OKR objetivo KEY RESULT
+
+g-objetivo que planeja alcançar
+  exemplo-comprar um carro
+
+KR-quanto você tem se saido para chegar ao objetivo
+  exemplo-aumentei a carga horaria de 8 horas pra 9 horas diarias
+---------------------------------------------------------------------------------------------------------------
+Modelo de Domínio
+
+É uma representação de classes concentuais e não de componentes de software;
+--------------------------------------------------------------------------------------------------------------
+Requisito
+– Características ou propriedades de um
+sistema.
+– Descrição de o que o sistema deve fazer.
+– Definições de funcionamento.
+– Restrições.
+
+
+Existem várias maneiras de documentar os
+requisitos.
+• UML.
+• 5W 1H (O que? Por que? Quando? Onde? Quem? Como?)
+• LEL (Léxico Estendido de Linguagem)
+
+RFN-QUEM:O QUE:COMO-DEVE FAZER
