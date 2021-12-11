@@ -1,0 +1,41 @@
+funções em c
+http://www.cmaismais.com.br/referencia/cstdio/fseek/
+
+
+bibliotecas
+
+stdlib.h
+stdio.h
+math.h
+string.h
+limits.h
+ctype.h
+time.h
+stdbool.h
+
+
+
+<assert.h>	Macro para ajudar na detecção de erros lógicos e outros tipos de erros em versões de depuração de um programa.	
+<complex.h>	Conjunto de funções para manipular números complexos.	C99
+<ctype.h>	Funções usadas para classificar caracteres pelo tipo ou para converter entre caixa alta e baixa independentemente da codificação.	
+<errno.h>	Teste de códigos de erro reportados pelas funções de bibliotecas.	
+<fenv.h>	Controle de ponto flutuante.	C99
+<float.h>	Constantes de propriedades específicas de implementação da biblioteca de ponto flutuante, como a menor diferença entre dois números de ponto flutuante distintos (_EPSILON), a quantidade máxima de dígitos de acurácia (_DIG) e a faixa de números que pode ser representada (_MIN, _MAX).	
+<inttypes.h>	Conversão precisa entre tipos inteiros.	C99
+<iso646.h>	Programação na codificação de caracteres ISO 646.	NA1
+<limits.h>	Constantes de propriedades específicas de implementação da biblioteca de tipos inteiros, como a faixa de números que pode ser representada (_MIN, _MAX).	
+<locale.h>	Constantes para setlocale() e assuntos relacionados.	
+<math.h>	Funções matemáticas comuns em computação.	
+<setjmp.h>	Macros setjmp e longjmp, para saídas não locais.	
+<signal.h>	Tratamento de sinais.	
+<stdarg.h>	Acesso dos argumentos passados para funções com parâmetro variável.	
+<stdbool.h>	Definição do tipo de dado booleano.	C99
+<stdint.h>	Definição de tipos de dados inteiros.	C99
+<stddef.h>	Diversos tipos e macros úteis.	
+<stdio.h>	Manipulação de entrada/saída.	
+<stdlib.h>	Diversas operações, incluindo conversão, geração de números pseudo-aleatórios, alocação de memória, controle de processo, sinais, busca e ordenação.	
+<string.h>	Tratamento de cadeia de caracteres.	
+<tgmath.h>	Funções matemáticas.	C99
+<time.h>	Conversão de tipos de dado de data e horário.	
+<wchar.h>	Manipulação de caractere wide, usado para suportar diversas línguas.	NA1
+<wctype.h>	Classificação de caracteres wide.	NA1

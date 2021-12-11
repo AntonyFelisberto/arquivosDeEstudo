@@ -1,0 +1,93 @@
+grau: numero de filhos que a RAIZ e as SUB ARVORES(pais) tem
+           
+            A  GRAU 2
+           / \
+  GRAU 1  B   C GRAU 2
+         /   / \
+        D   E   F GRAU 0
+
+
+raiz é a parte principal que conecta todos os nós
+
+    	    A  RAIZ
+           / \
+          B   C 
+         /   / \
+        D   E   F 
+
+nós é tudo que está na arvore até mesmo a raiz é um nó(cada nó pode ter no máximo 2 filhos)
+
+    	    A         nós:A,B,C,D,E,F
+           / \
+          B   C 
+         /   / \
+        D   E   F
+
+profundidade e nivel é a mesma coisa sempre começa de cima e vai indo pra baixo
+
+    	    A  nivel 0
+           / \
+          B   C nivel 1
+         /   / \
+        D   E   F nivel 2
+
+    	    A  profundidade 0
+           / \
+          B   C profundidade 1 
+         /   / \
+        D   E   F profundidade 2
+
+altura tem que tomar cuidado pois pode mudar,sempre começa pela parte que tem mais nós e comece a contar a partir desse nó
+
+       h4    A  
+           /   \
+     h3   B     C  h2
+         /     / \
+    h2  D  h0 E   F h1
+       / \         \
+  h1  G   H h0      I h0
+     /
+h0  J
+
+
+             A   h5
+           /   \
+     h2   B     C  h4
+         /     / \
+    h1  D  h0 E   F h3
+       / \         \
+  h0  G   H         I h2
+                     \
+                      J h1
+                       \
+                        K h0
+
+folhas são todas aquelas que não possuem nós ligadas a elas
+
+    	    A  
+           / \
+          B   C     folhas:e,f,g
+         /   / \
+        D   E   F 
+       /               
+      G
+
+descendentes são os filhos do pai ou seja são todos os nós que ele está conectado
+
+    	    A  
+           / \
+          B   C     descendentes do a:b,c,d,e,f,g
+         /   / \    descendentes do b:d,g
+        D   E   F   descendentes do d:g
+       /            descendentes do c:e,f   
+      G
+
+qual o caminho pra chegar até tal nó
+
+    	    A  
+           / \           chegar no nó E:A,C,E
+          B   C          chegar no nó G:A,B,D,G
+         /   / \    
+        D   E   F   
+       /              
+      G

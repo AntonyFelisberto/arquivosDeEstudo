@@ -1,0 +1,8 @@
+         estrutura de dados arvore
+
+https://www.youtube.com/watch?v=w6KIvZSg0gs
+
+https://www.ime.usp.br/~pf/algoritmos/aulas/binst.html
+
+https://www.ic.unicamp.br/~rocha/teaching/2016s1/mc202/aulas/arvore-binaria-busca-01.pdf
+
