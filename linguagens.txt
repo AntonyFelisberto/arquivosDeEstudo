@@ -1,0 +1,215 @@
+linguagens
+
+fortementetipada-as variaveis ja tem que vir com definição como int,char...
+não tipada-as variaveis não tem uma definição
+
+c
+
+tiporetorna main(void){
+   tipovar nomevar;
+
+
+   nomevar=valor;
+   printf("o que vai na tela");
+
+
+}
+void main(void){
+   char var[50];
+
+
+   var="10";
+   printf("o que vai na tela");
+
+
+}
+---------------------------------------------------------
+java 
+
+fazer variavel static
+
+public static tipo nomevar
+private static int var;
+
+
+class nomedaclasse{
+   public void main (String[] args){
+     tipovar nomevar;
+
+
+   nomevar=valor;
+   Syste.out.printf("o que vai na tela");
+
+}
+}
+
+class lasse{
+   public void main (String[] args){
+     int nomevar;
+
+
+   nomevar=10;
+   Syste.out.printf("o que vai na tela");
+
+}
+}
+
+public class lasse{
+    public nomevar;
+    private nomevar;
+
+}
+}
+
+construtot
+
+public class NomeClass{
+   public mesmonomedaclassequeelata(){
+
+   }
+//o construtor não retorna nada e quando você declara ele no arquivo principal ele se chama automaticamente
+
+
+
+}
+
+public class Nome{
+   public Nome(){
+
+   }
+//o construtor não retorna nada
+
+
+}
+
+sobrecarga de metodos 
+
+
+public class Nome{
+   private tipo nomeva;
+   public Nome(){
+      this.nomeva=valor;
+   }
+   public Nome(tipoquerecebe nomevar){
+      this.nomeva=nomevar;
+   }
+//o construtor não retorna nada e você pode criar varios desses metodos construtores
+
+}
+
+public class Nome{
+   private tipo nomes;
+   public Nome(){
+      this.nomes="alunos;
+   }
+   public Nome(String nomeados){
+      this.nomes=nomeados;
+   }
+//o construtor não retorna nada e você pode criar varios desses metodos construtores
+
+}
+
+Nome chamada=new Nome("alunos");
+
+
+
+destrutores
+
+chamado quando um objeto não é mais necessario
+----------------------------------------------------------
+c# 
+
+public class nomedaclasse{
+  public static void main (){
+     System.Console.WriteLine("o que quer que apareça");
+  }
+}
+
+----------------------------------------------------------
+visual basic net
+
+Module nome
+
+   Sub Main()
+     System.Console.WriteLine("o que quer que apareça");
+   End Sub
+
+End Module
+-----------------------------------------------------------
+ruby
+
+altamente tipada
+tudo é um objeto,até os tipos de variaveis
+
+#comentário usa hashtag
+
+def nomedafunção(o que recebe)
+    puts "o que vai escrever,#{nomevariavel}"
+end
+
+nomevariavel=valor
+nomedafunção(o que recebe)
+
+
+def principal(x,rola,nome)
+    puts "o que vai escrever,#{x}"
+end
+
+x=1
+rola=2
+nome="antony"
+principal(x,rola,nome)
+
+rubynails.org
+ruby-lang.org
+-----------------------------------------------------------
+python
+
+#isso é um comentario
+
+def nomedafunção(o que recebe)
+    print "o que vai escrever",x
+    
+
+nomedafunção(o que recebe)
+
+
+def principal(x,rola,nome)
+    print "o que vai escrever",x
+
+principal(x,rola,nome)
+
+python.org
+
+vet=[]
+assim vc declara uma lista vazia, ai para adicionar é só colocar Vet.append()
+------------------------------------------------------------
+swift
+
+//isso é um comentario
+func nomedafunção(nomedavar:tipo){
+    print("o que quer que aparece"+nomevar)
+}
+
+var nomevar=valor
+nomedafunção(nomevarfunc:nomevar)
+
+//isso é um comentario
+func princi(nome:String){
+    print("o que quer que aparece"+nomes)
+}
+
+var nome="antony"
+princi(nome:nomes)
+
+private var _nome="antony"
+
+public var nome="antony"
+
+ferramenta
+xcode
+
+apple.com
+developer.apple.com
+swift.org
+-------------------------------------------------------------

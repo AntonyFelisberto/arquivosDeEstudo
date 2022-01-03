@@ -1,0 +1,371 @@
+poo
+
+objetos independentes com dados e lógica própria
+se comunicam entre si
+aproxima a solução do problema a linguagem falada
+esses objetos pertencem a uma classe e podem comunicar entre si
+
+
+uma vantagem é reutilização de código e metodos prontos
+
+classes
+
+são as descrições de um objeto,suas caracteristicas
+
+uma classe tem
+
+nome
+----
+atributos
+---------
+metodos
+
+pessoa
+----
+nome
+---------
+comer()
+
+objeto
+
+criar um objeto a partir de uma classe
+criar multiplos objetos a partir de uma classe
+
+
+--------------------------------------------------------------------------------------------
+cada objeto tem suas proprias caracteristicas,atributos e comportamento
+
+a classe não é o objeto e sim um modelo do que ele será e definição,é usada para criar objetos e cada classe é um objeto diferente
+toda classe tem nome,atributos e comportamentos(no caso os metodos que são funções só que daquela classe)
+existem classes já pré definidas
+---------------------------------------------------------------------------------------------------
+abstração
+
+você entende
+poucas informações genérico vs especifico
+significado abstrato
+qualidades essenciais
+importantes e relevantes
+atributos especificos
+instancia independente(uma classe unica pra abstração ex:classe estudante joão classe estudante maria,forma uma e fica classe estudantes)
+------------------------------------------------------------------------------------------------------
+encapsulamento 
+
+A ideia de encapsulamento é de que uma classe pode e deve manter os atributos internos de um objeto protegidos, provendo acesso a eles somente através de métodos específicos.
+
+------------------------------------------------------------------------------------------------------
+herança
+
+herança permite que uma nova classe receba ou herde todos os atributos e métodos da classe existente, usando a mesma implementação.
+
+uma das maneiras de descobrir se é uma herança é se perguntando
+
+é um
+é uma
+é um tipo de
+é como
+
+tambem ver se alguma classe tem atributos parecidos ou algo que poderia conectar elas
+
+ex
+
+classe cliente  classe funcionario
+nome                 nome
+telefone            telefone
+email                 email
+                      id
+compraritem()     promovido()
+                  aposentar()
+
+como as duas classes acima tem atributos parecidos você pode criar uma superclasse e armazenar os valores repetidos nela e só separar os que não se repetem
+
+classe cliente  classe funcionario  classe pessoas
+                                         nome
+                                       telefone
+                                        email
+                     id               guardardados()
+compraritem()     promovido()
+                  aposentar()
+
+reutilização de código
+manutenção de código
+ferramenta poderosa
+
+
+cada linguagem tem diferentes tipos
+
+unica-uma classe só pode herdar de uma classe
+multiplas-uma classe pode herdar de multiplas classes
+mixins-permite combinar objetos pra criar outros
+protótipos-as propriedades podem ser removidas entre outras coisas
+
+para herdar em java você usa
+
+public class nomeclasse extends nomeclasseprincipal{
+}
+public class Carro extends Loja{
+}
+
+para chamar o super você tem que estar na classe principal e chamar o super.nomedometodo
+------------------------------------------------------------------------------------------------------
+classes abstratas 
+
+tem o propósito de ser herdada por outras classes
+não é instanciada,somente suas subclasses
+métodos são somente declarados,mas não implementados
+metodos são implementados nas sub classes
+
+em java pra você colocar se a classe é abstrata ou não
+
+public abstract NomeClasse{
+private abstract NomeClasse{
+
+final NomeClasse{->implementa todas as funções ausentes na classe
+
+classes abstratas e concretas
+
+não é oficial em todas as lingugens de programação
+o conceito pode ser aplicado em qualquer linguagem
+o importante é comunicar como as classes foram projetadas
+---------------------------------------------------------------------------------------------------
+interfaces 
+
+é uma estrutura de programação que declara um conjunto de métodos para uma classe implementar,sem a implementação em si
+
+em java
+
+interface nomeinterface{
+   //assinatura de metodo
+void nomefunçãodaclasse(int x,int y);
+}
+
+class nomeclasse implements nomeinterface{
+     public void nomefunçãodaclasse(int x,int y){
+        codigo
+     }
+
+}
+
+interface Andar{
+   //assinatura de metodo
+   void praonde(int x,int y);
+}
+
+class nomeclasse implements Andar{
+     public void praonde(int x,int y){
+        codigo
+     }
+
+}
+
+se parece com uma classe abstrata mas tem alguns atributos diferentes
+interfase se resume aos recursos de uma classe
+a classe abstrata se resume ao tipo de classe que vai ser herdada 
+ 
+não contém a implementação do método
+uma classe implementa uma interface especifica
+promessa de implementar todos os métodos da interface
+classe é responsavel por implementar a funcionalidade
+------------------------------------------------------------------------------------------------------
+agregação 
+
+um objeto é constituido por outro objeto
+
+
+----------------------------------------------------------------------------------------------------
+polimorfismo
+
+algo que tem muitas formas
+
+implementação do polimorfismo
+herança
+classe abstrata
+interfaces
+
+existem varios tipos
+
+dynamic ou run time
+dinamico ou tempo de execução:metodos com nomes iguais podem ser implementados de maneira distinta
+
+ex:
+
+carro biciclete trem
+|---------|------|
+        andar();
+os tres tem o mesmo metodo mas os valores podem ser distintos
+
+overriding ou substituição:herança com métodos re implementados-interface comum
+ou seja você modifica um método pra se adequar aquela classe
+
+
+polimorfismo dinâmico
+
+usar qualquer versão de um objeto
+usar interface comum de interação
+
+static/compile-time polymorphism
+polimorfismo estático/tempo de compilação
+metodo overloading(sobrecarga de metodo)-fornece funcionalidades diferentes mas bem diferentes
+
+
+---------------------------------------------------------------------------------------------------
+orientação a objetos
+
+analise:entender o problema,o que deve ser feito
+design:planejar solução,como fazer isso
+programação:criação do sistema
+
+metodologia
+
+1-reunir requisitos
+2-descrever o aplicativo
+3-identificar os objetos principais
+4-descrever as interações
+5-criar diagrama de classes
+----------------------------------------------------------------------------------------------------
+UML-unified modeling language
+
+não é uma linguagem de programação
+linguagem gráfica
+pra visualizar sistemas orientados a objetos
+
+ficar somente no básico,pois o uml deve ser uma tarefa rapida,ele deve ser uma visão geral do sistema
+pode ser feito no papel ou em uma ferramenta online
+
+tipos de uml
+diagrama de classe
+caso de uso
+
+
+diagrama de classe
+
+NomeClasse             Singulas,primeira letra maiuscula,CamelCase
+----------
+atributos              
+----------
+comportamentos
+
+Aluno
+----------
+nomeAtributo:tipo=valor
+nome:String
+idade:int=10
+situação:bool=true
+posição:aluno              
+----------
+comportamentos(o que recebe)
+comportamento ():tipo de retorno que está esperando
+pedirCpf():atendente
+sentar(posição)
+idade(int)
+
+-privado
++publico
+
+Aluno
+----------
++nomeAtributo:tipo=valor
++nome:String
++idade:int=10
+-situação:bool=true
++posição:aluno              
+----------
+-comportamentos(o que recebe)
+-comportamento ():tipo de retorno que está esperando
+-pedirCpf():atendente
++sentar(posição)
++idade(int)
+
+--------------------------------------------------------------------------------------------------------
+casos de uso 
+
+titulo-qual o objetivo(deve ser declarado com frases pequenas)
+ator principal-quem vai atingir o objetivo(o nome de quem vai participar pode ser humano ou não,serão todos que vão interagir)
+cenario-etapas para alcançar o objetivo ex:aquecer lanche,inserir dados (você pode classificar essas ações por numeros)
+  caso você pense em ações que podem dar erro você pode co numero e a letra do erro tipo 1a 2a 3a 3b 
+
+história de usuário
+
+eu como....(tipo de usuário)
+quero...(objetivo)
+para...(razão)
+
+
+eu como aluno
+quero estudar
+para trabalhar
+
+modelo conceitual
+
+seria pegar os objetos e ligar com o que eles se conectão,qual suas cardinalidades e o que fazem
+
+cardinalidades
+
+1.* um ou muitos
+0.* nenhum ou muitos
+1.1 um e somente um
+
+ 1.*  matricular    1.*         gerar dados       gerar
+aluno----------->universidade----------->boleto--------->ra
+{fazer pedido}       |
+                     | 
+                     |>registra aluno
+
+você pode colocar mais de uma coisa pra eles fazerem
+        matricular
+aluno------------->
+{fazer pedido
+ pagar boleto
+ pegar ra
+}   
+mais tem que tomar cuidado pois esses objetos são considerados deus e não podem haver muitos
+
+
+cartoes crc
+
+não se usam ferramentas e sim papel
+
+classe,responsabilidade e colaboração
+
+informações iguais ao diagrama de objetos conceituais
+formato diferente
+escrito a mão em uma ficha
+simples e facil de usar
+
+geralmente é o nome da classe e uma tabela 2 por 4
+
+{          Nome da classe         }
+{Responsabilidade}{ colaboradores } colaboradores são as outras classes que vão interagir com essa
+
+
+{          jogador                }
+{Responsabilidade}{ colaboradores }
+   controlar        controle
+   ligarvideogame   sistema           
+-------------------------------------------------------------------------------------------------------
+definição de requisitos
+
+problema a ser resolvido(coletar informações,focar nas funcionalidades essenciais)
+motivação
+requisitos funcionais(o que precisa fazer,com quais recursos e com qual capacidade)
+requisitos não funcionais(regras de privacidade,metas de desempenho,nivel de atendimento ao cliente,requisitos de segurança)
+capturar somente os requisitos essenciais
+evitar itens opcionais,interessantes ou sonhadores
+podem ser revisitados e atualizados
+------------------------------------------------------------------------
+furps(funcionalidade,usabilidade,confiabilidade,desempenho e suportabilidade)
+
+funcionalidade-capacidade,reutilização,segurança
+usabilidade-afeta a pessoa que usa o aplicativo (funcionalidade,estética,consistencia,documentação)
+confiabilidade-disponibilidade,taxa de erros,duração dos erros,previsibilidade
+desempenho-tempo de resposta,eficiencia,consumo de recurso e escalabilidade 
+suportabilidade-testabilidade,extensibilidade,manutenibilidade,configurabilidade,instabilidade
+
+o furps+ tem mais 4
+
+design-como deve ser feito?
+implementação-qual tecnologia será usada?
+interface-com quais outros sistemas deve interagir
+requisitos fisicos-onde o sistema funcionara?
+
+
