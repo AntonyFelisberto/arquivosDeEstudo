@@ -1,0 +1,18 @@
+Run 			cria o conteiner
+Ps			lista o container
+Info			traz informações do container
+Images			imagem utilizada pra criar o container
+exec			executa o container
+stop,start		parar e iniciar container
+logs			lista os outputs
+inspect			lista as configuraçoes do container
+pull			baixar as imagens do repositorio
+commit			atualizar modificações
+tag			melhorar o versionamento
+login,logout		usado pra logar ou sair do repositorio
+push			armazenar no repositorio
+search			procurar imagens
+rm			remover container
+rmi			remover imagem
+export,import		exportar container
+save,load		salvar uma imagem de docker como arquivo de texto
