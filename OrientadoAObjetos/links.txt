@@ -1,0 +1,10 @@
+https://en.wikipedia.org/wiki/Unified_Process
+https://www.methodsandtools.com/archive/archive.php?id=32
+https://developer.ibm.com/devpractices/devops/
+http://www.tutorialspoint.com/object_oriented_analysis_design/
+https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)
+http://www.desenvolvimentoagil.com.br/xp/praticas/tdd/
+https://refactoring.guru/
+http://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm
+http://www.agileandart.com/2010/07/16/ddd-introducao-a-domain-driven-design/
+https://www.martinfowler.com/bliki/AnemicDomainModel.html
