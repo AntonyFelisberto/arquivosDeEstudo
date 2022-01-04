@@ -1,0 +1,103 @@
+pasta segura
+
+md aux\
+
+deletar pasta segura
+
+rd aux\
+
+esconder pasta
+
+attrib +h +s +r nomepasta
+
+mostrar pasta
+
+attrib +h +s +r nomepasta
+
+desligar pc
+
+shutdown -r
+
+tempo para desligar pc
+
+shutdown /s /t 50 
+
+tempo para desligar pc com mensagem
+
+shutdown /s /t 50 /c "mensagem
+
+mostrar cores
+
+color 
+
+criar hotspot na rede
+
+netsh wlan set hostadnetwork mode=allow ssi=ABC keys=password123
+
+netsh wlan start hostednetwork 
+
+para hotspot
+
+netsh wlan stop hostednetwork
+
+limpar tela
+
+cls
+ 
+pegar lista de todos os programas instalados
+
+wmic product get name
+
+copiar diretorio
+
+dir | clip (exemplo ipconfig | clip)
+
+cmd shortcuts
+
+chegar se você esta rodando como admin
+
+net session -se der erro é pq você não é admin
+
+abrir pagina ou arquivo usando cmd
+
+start endereço do site
+start nomeApp.tipo
+
+pegar lista de processos rodando
+
+tasklist
+asklist /v
+
+trocar hora do sistema 
+
+time
+
+encriptografar arquivos
+
+cd local (exemplo cd desktop)
+cd pasta (exemplo cd jogos)
+Cipher /E
+
+informação do sistema
+
+systeminfo
+
+cor do sistema
+
+color 0a
+     background|CorLetra
+
+criar numeros aleatorios
+
+%random%
+
+escrever na tela
+
+echo o que vai escrever (exemplo echo %random%)
+
+fazer voltar até uma posição
+
+:voltarPraCa
+
+
+goto voltarPraCa
