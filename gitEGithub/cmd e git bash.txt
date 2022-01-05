@@ -1,0 +1,73 @@
+prompt(da pra usar tudo no git bash tambem)
+você pode utilizar um comando após o outro
+
+echo nome do que quer printar			->printa o que você escrever na tela
+
+echo nome do que quer printar>nomearquivo.tipo  ->basicamente cria/escreve no arquivo o que você quer printar
+
+dir 						->traz uma lista de diretórios/pastas no windows
+
+cd caminhoespecifico 				->leva você pro diretório que você coloca ex(cd windows)
+
+cd.. 						->traz você pra uma pasta antes,a pasta que você tava antes 
+
+cls 						->limpa a tela
+
+apertar TAB 					->ele completa sozinho o resto das palavras pra você
+
+mkdir nomedapastaquequercriar			->cria uma pasta no local que você ta
+
+del  nomedoarquivoquequerdeletar                ->deleta o arquivo que você colocar
+
+rmdir nomedoarquivooupasta /S /Q         	->remove a pasta com todos os arquivos juntos
+
+ctrl l						->limpa a tela
+
+
+           
+git bash
+
+echo "o que vai mostrar"
+
+openssl sha1 nome.tipoarquivo    		->salva o arquivo e gera um código para confirmar sua modificação
+
+ls                               		->lista os itens do diretório 
+
+cat nomedoitem.tipo              		->lista os dados que estão gravados no arquivo
+
+$ eval $(ssh-agent -s)           		->gera o agente pid
+
+ls -a                               		->lista os itens do diretório que estão ocultos
+
+git init					->inicializa o repositorio para versionamento
+
+git config --global user.email "email" 		->cria seu email
+
+git config --global user.name seuNome 		-> cria um usuario
+
+git add *					->adiciona o seu git todos os arquivos que foram inseridos ou modificados
+git add nomeArquivo.tipo
+git add nomeArquivo.tipo nomedapastaOndeOArquivoEsta/
+
+git commit -m "mensagem do seu git"		->comita pra master
+
+git status					->diz como estão os arquivos no diretório,se foi feita alterações e se precisa fazer algo
+
+mv nomepasta ./nomepasta/			->move um arquivo pra dentro de outro
+mv nomearquivo.tipo ./nomepasta/
+
+echo > nome.tipo				->cria um arquivo
+
+git config --list 				->lista toda a sua configuração
+
+git config --global --unset oQueDesejaAlterar	->altera a configuração que deseja
+
+git remote add origin linkDoRepositorioDoGithub	->da um commit de tudo pro seu github
+
+git remote -v 					->mostra seu repositorio
+
+git push origin master				->da um push pro seu repositorio remoto
+
+git pull origin master				->da um pull pro seu repositorio remoto
+
+git clone urlDoDiretorio			->copia os arquivos do diretorio especificado

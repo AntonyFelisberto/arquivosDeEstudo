@@ -1,0 +1,2 @@
+# ParadigmaFuncional
+ aprendendo paradigma funcional

@@ -1,0 +1,3 @@
+issues-são perguntas que você quer fazer a outras pessoas pra resolver um problema que você teve(veriicar se ja tem uma issue com seu problema)
+
+pullrequest-é quando você tem a solução de algum problema ou atualização pro código e quer que o desenvolvedor veja essa sua solução ou proposta 

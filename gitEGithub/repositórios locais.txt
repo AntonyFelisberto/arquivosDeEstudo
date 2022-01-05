@@ -1,0 +1,8 @@
+  repositórios locais
+
+github
+gitlab
+gogs
+kallithea
+bitbucket
+phabricator
