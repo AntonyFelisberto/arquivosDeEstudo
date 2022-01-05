@@ -1,0 +1,117 @@
+rede
+
+são conjunto de equipamentos que compartilham de informações e recursos
+
+cada um desses equipamentos é chamado de nó
+
+wan-wide area network ou world area network é uma rede geograficamente distribuida
+
+man-metropolitan area network é uma rede metropolitana que interligam varias redes locais,as man interligam as redes locais que são as lan
+
+lan-local area network é uma rede local de uma forma geral em um unico prédio ou campus, a rede da sua casa é uma lan
+
+como as redes são diferentes foi criado um tradutor para uma rede e outra que são chamados de protocolos
+que é basicamente uma linguagem que foi criada para que as redes consigam se entender entre si
+
+ip-endereço de ip-protocolo de internet-são numeros que identificam seu computador em uma rede
+					são dois numeros um identifica o ip da sua casa e outro na rede
+
+icmp-internet control protocol message-tem por objetivo prover mensagens de controle na comunicados dos equipamentos
+
+dns-domai name server-protocolo de aplicação tem por função identificar identificar endereços ip
+			e manter uma tabela com os endereços dos caminhos de redes
+
+interfaces de rede-é um software e/ou hardware que faz a comunicação em uma rede de computadores
+		   uma dessas interfaces é o loopback um tipo especial de interface que permite fazer conexõe
+		   com você mesmo,com ela,você pode testar vários programas sem  interfirir em sua rede padrão, o endereço ip 127.0.0.1
+		   foi escolhido para loopback 
+
+
+
+----------------------------------------------------------------------------------------------------------------
+bi-business inteligence
+
+é composto por:
+
+	ferramentas
+	infraestrutura
+	profissionais
+	Dados
+
+
+olap-não são volateis
+
+     dados não devem ser alterados
+
+oltp-são extremamente voláteis
+
+     são passiveis de modificação
+-----------------------------------------------------------------------------------------------------------------
+big data 
+
+são conjuntos de varios dados
+
+dados semi estruturados
+
+	podem manter e alterar informação sem a necessidade de ter uma regra explicita
+	são dados que você tem que obedecer uma estrutura basica onde você pode ter ou não informação pois isso não é uma regra
+	not only sql/no sql	se comportam como banco de dados estruturados/relacionais mais que te dão mais flexibilidade no banco
+
+data lake
+
+	é um big data mais corporativo mais reservado
+-------------------------------------------------------------------------------------------------------------------
+serveless (você não precisa nem cuidar do servidor que você alugou/do seu provedor)
+
+sem servidor
+
+sem serviço "rodando"
+
+sem down time
+------------------------------------------------------------------------------------------------------------------
+dev ops
+
+	antes todos os times de na area de ti eram separados mas com a definição do devops todas as equipes começam a trabalhar
+	em times produzindo software rapido e confiavel,com praticas automatizadas entre equipes de desenvolvimento ,operações e qa
+	o devops não resolve problemas de ferramentas e sim de humanos	
+
+framework calms-serve pra avaliar se você esta conseguindo aplicar o devops
+
+é formada por 5 processos
+
+culture-automation-lean-measurement-searing
+
+
+culture-todas ferramentas e automação se não forem acompanhadas pela verdadeira disposição da area
+	de desenvolvimento e operações trabalhadas em conjunto
+
+automation-elimina o trabalho manual repetitivo produz processos repetitivos e cria sistemas,automatizar gerando velocidade na entrega e tornando todos os envolvidos mais produtivos
+	   normalmente,compilação ,teste,implementação e provisionamento automatizados são ponto de partida para empresas que não tem esse processo automatizado
+
+lean-focar em entregas de valor ao cliente, precisamos ser objetivos e enxutos e precisamos conhecer os gargalos  e limitações do processo,isso é ser leam
+     no devops é visto quealquer oportunidade é melhoria é continua em toda parte identificando as limitações podemos otimizar o fluxo, entregando mais velocidade e mais eficiencia
+
+meansure-o devops é ciclico e infinito.mensurar e obter métricas é o ponto de partida para novas melhorias,seja para o processo de desenvolovimento, o software produzido ou as regras de negócio
+	gera conhecimento,métricas criam previsibilidade sobre possiveis incidentes que possam surgir.assim, temos insumos suficientes para analisar falhas e gerar melhorias constantemente
+
+sharing-o compartilhamento de informações além de ser saudável auxilia na descentralização de conhecimento em pessoas de time evitando que os processos se tornem dependentes
+	compartilhar conhecimento ajuda na criação de times genéricos,com conhecimentos basicos diversos assuntos de negócio e tecnologias assim o time se torna autosustentavel
+
+OS TRÊS CAMINHOS
+
+FLOW
+a otimização do fluxo visa eliminar desperdicios,gargalos no processo,transferencia de responsabilidades e tempo de espera.esse caminho é trilhado entre a demanda e a entrega em produção
+a chave para esse caminho  é a aplicação da metodologia agil e a automatização de processos do desenvolvimento a release como a integração continua e entrega continua
+
+FEEDBACK
+
+ciclos rapidos de feedbacks que visam resolver problemas o quanto antes, testando tudo, alertando em qualquer falha, considerando todas as métricas coletadas no ambiente produtivo sobre o valor entregado
+o monitoramento é a chave ajudando a gerar informações relevantes constantemente. com feedbacks rapidos, o negocio consegue falhar rápido e logo retomar o rumo, caso necessário
+
+LEARNING
+
+o aprendizado continuo visa gerar conhecimento atraves de experimentação hipóteses são melhores do que uma certeza imediata,esse caminho é fruto do processo cientifico e produz segurança psicologica
+a chave é o trabalho dinamico, com times realizando experimentos em seu trabalho diario para gerar novas melhorias.elimine a cultura da culpa e o aumento da colaboração e compartilhamento de conhecimento
+
+Um artefacto (Pt/Pt) ou artefato (Pt/Br) é um dos vários tipos de subprodutos concretos produzido durante o desenvolvimento de software. Alguns artefatos (por exemplo, casos de uso, 
+diagramas de classes, requisitos e documentos de projeto) ajudam a descrever a função, arquitetura e o design do software.

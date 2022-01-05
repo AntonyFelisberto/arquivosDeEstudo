@@ -1,0 +1,116 @@
+				Comunicação
+
+Comunicação é o ato de transmissão de informações de uma pessoa
+a outra
+
+• Para que exista a comunicação são necessários 4 elementos básicos:
+	• Emissor: transmite informações                      TX-transmitir
+	• Receptor: que recebe as informações do emissor      RX-recebe
+	• Meio de transmissão: interface ou caminho entre o emissor e receptor que transporta o sinal  SINAL
+	• Sinal: protocolo de comunicação
+
+cada dispositivo é conhecido como host
+
+redes são estruturas que conectam 2 ou mais dispositivos
+
+o objetivo de uma rede é compartilhar recursos
+----------------------------------------------------------------------------------------------------------
+Classificações de Redes
+
+• Ethernet-é um padrão desenvolvido pra duas ou mais máquinas se comunicarem usando cabeamento(na camada fisica)
+----------------------------------------------------------------------------------------------------------
+osi e tcp/ip
+
+osi                      tcp
+7camadas(bom)        5camadas(ruim)
+protocolo ruim       protocolo bom
+
+
+fisica-placa de rede ,ethernet,wifi
+enlace-estabelece o contato com a outra maquina mas não transmite nada,pra onde o pacote dados vai
+rede-termina de estabelecer o contato,define o caminho que vai ser feito
+transporte-prepara a transmissão do pacote 
+sessão-estabelece o tipo de comunicação,envia os dados do pacote
+apresentação-é onde vai chegar toda a aplicação e ela vai ser montada
+aplicação-é o pacote inteiro entregue
+----------------------------------------------------------------------------------------------------------
+LAN-local area network    	(redes com fio) é sua rede local
+PAN-persona area network  	(rede com fio) é uma rede que você personaliza do jeito que você quer
+MAN-metropolitan area network	(rede com fio)é uma rede metropolitana
+RAN-regional area network        (rede com fio)é uma rede que conecta duas cidades
+CAN-campus area network         (rede com fio)é uma area dentro dos campos
+SAN-storage area network        (rede com fio)Rede destinada exclusivamente a armazenar dados
+HAN-home area network           (rede com fio)é uma rede caseira/doméstica
+WMAN-metropolitan area network	(rede sem fio)é uma rede metropolitana só que sem fio pra você usar na cidade
+
+WAN-wide area network		(rede com fio)seria o resultado da união entre várias redes do tipo lan é ele quem faria essa conexão
+                                              é uma rede de longa distancia
+
+WWAN-wireles wide area network	(rede sem fio)seria o resultado da união entre várias redes do tipo lan é ele quem faria essa conexão
+WLAN-wireless area network	(redes sem fio,é radio ou seja sem fio)tudo que tiver w na frente é wireless ou seja sem fio
+-------------------------------------------------------------------------------------------------------------------------
+Classificações de Redes
+• Segundo a topologia
+• Rede em anel (Ring)              é uma rede fechada que só se conecta nos pontos que estão conectados a ela
+• Rede em barramento (BUS)         tem uma sequencia de cabeamento,mas não tem um ponto central
+• Rede em estrela (Star)           é uma que possui um concentrador
+• Rede em malha (Mesh)             é uma rede malhada,ela é cheia de ramificações e possui varias mane
+• Rede em ponto-a-ponto (ad-hoc)   é uma rede que se conecta com outra com uma máquina
+• Rede em árvore	           é uma rede onde tem a raiz e todos os outros nós
+  Rede hibrida                     é uma rede que você pode misturar todos os outros métodos anteriores
+-------------------------------------------------------------------------------------------------------------------------
+Ethernet
+• Um cabo de rede deve ser curto o suficiente para que os dispositivos
+em cada ponta recebam o sinal sem interferências e sem atraso
+• Os padrões atuais (2008) do protocolo Ethernet são os seguintes:
+• 10 megabits/seg: 10Base-T Ethernet (IEEE 802.3)
+• 100 megabits/seg: Fast Ethernet (IEEE 802.3u)
+• 1 gigabits/seg: Gigabit Ethernet (IEEE 802.3z)
+• 10 gigabits/seg: 10 Gigabit Ethernet (IEEE 802.3ae)
+-------------------------------------------------------------------------------------------------------------------------
+Protocolo
+
+um protocolo é um acordo entre as partes que se
+comunicam, estabelecendo como se dará a comunicação
+
+                   CAMADAS
+
+camada 5-camada de origen    			   				camada 5-camada de destino          
+camada 4-estabelece os dados e marca a camada      	        		camada 4-verifica a marca da camada e envia pro destino
+camada 3-quebra os dados mantem o carimbo e marca seu carimbo   		camada 3-verifica a marca da camada e junta todos os dados
+camada 2-mantem o carimbo e marca seu carimbo dizendo que é da camada fisica    camada 2-verifica a marca da camada e verifica se os dados é pra esse host               
+camada 1-camada de envio do pacotr                           			camada 1-camada de recebimento do pacote
+------------------------------------------------------------------------------------------------------------------------------------
+placa de rede é o ponto fisico que faz a conexão entre duas máquinas com padrão ethernet(poderia ser padrão internet,wifi,bluetooh)
+
+------------------------------------------------------------------------------------------------------------------------------------
+Roteamento
+
+ela toma a decisão do melhor caminho paro o envio dos dados
+como se fosse um gps
+---------------------------------------------------------------------------------------------------------------------------
+broadcast
+
+mandar informação pra toda a rede,mandar informação pra várias pessoas ao mesmo tempo,é uma comunicação multiponto
+--------------------------------------------------------------------------------------------------------------------------
+topologia fisica:cabeamento
+topologia lógica é como você configura a máquina
+-------------------------------------------------------------------------------------------------------------------------
+TRANSPORTE-é o meio do caminho
+
+DP-você manda sem receber confirmação
+DCP-você manda e se você não receber você reenvia o pacote
+-----------------------------------------------------------------------------------------------------------------------
+segmento é um segmento ethernet
+Frames:são dados que são fragmentados e enviados ao usuário
+nós-são cada um dos dispositivos conectados a rede
+um desses nós é a Placa de rede que é responsável pela conexão da estação ao cabo de rede e pelo envio e recebimento dos quadros da estação pelo cabo
+-----------------------------------------------------------------------------------------------------------------------
+
+camada tcp/ip
+
+
+aplicação
+transporte
+internet
+enlace
