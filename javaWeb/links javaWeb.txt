@@ -1,0 +1,13 @@
+http://web-sniffer.net/
+https://www.ietf.org/rfc/rfc2616.txt
+https://javaee.github.io/tutorial/
+https://tomcat.apache.org/
+https://www.eclipse.org/
+https://www.theserverside.com/news/1365146/Redirect-After-Post
+https://docs.oracle.com/javase/tutorial/javabeans/
+http://hibernate.org/
+http://hibernate.org/orm/documentation/5.6/
+https://www.mysql.com/
+http://www.corej2eepatterns.com/
+https://tomcat.apache.org/tomcat-9.0-doc/ssl-howto.html
+https://en.wikipedia.org/wiki/Https
