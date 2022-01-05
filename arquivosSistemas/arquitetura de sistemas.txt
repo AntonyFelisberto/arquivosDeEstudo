@@ -1,0 +1,270 @@
+serviços web(web services)
+
+são serviços que para fazer aplicações de diferentes linguagens e bancos se comunicarem é criado o web service que se comunica com o banco de dados e se comunica com esses serviços utilizando linguagens de marcação que são quase universais fazendo com que qualquer aplicação e banco consiga entender esses dados
+
+
+soap
+
+simple object acess protocol
+
+é um protocolo baseado em xml para acessar serviços web principalmente por http
+é uma definição de como os serviços web se comunicam
+foi desenvolvido para facilitar integrações entre as aplicações
+
+vantagens
+
+permite integrações entre as linguagens pois usa  a linguagem xml(linguagem de marcação comum) independente da plataforma de software
+é um meio de transporte genérico ou seja pode ser usado por outros protocolos além do http
+
+estrutura
+
+possui uma unica estrutura que deve ser seguida
+
+soap Envelope->é o primeiro elemento do documento e é usado pra encapsular todos os elementos ou seja tudo fica dentro dele 
+ soap header->é o elemento que possui informações de atributos e metadados de requisição
+ soap body->é o elemento que contem o conteudo da mensagem
+
+
+xml
+
+extensible makup language
+foi criada pela w3c(organização responsavel pela padronização do www)
+facilita a separação do conteudo
+não tem limitação de criação de tags
+linguagem comum para integrações entre aplicações
+
+
+wsdl
+
+web services description language
+
+é um contrato definido pelo serviço de como o web service funciona,isso é feito em um documento xml descrevendo especificações de acesso,operações e métodos
+
+usado para descrever web services,funciona como um contrato 
+
+xsd
+
+xml schema definition
+
+é um schema no formato de xml usado para definir a estrutura de dados que sera validada no xml
+o xsd funciona como uma documentação de como deve ser montado o soap message(xml) que será enviado atraves de web services
+
+estudar
+
+http://www.soapclient.com/xml/soapresponder.wsdl
+
+REST,API,JSON
+
+REST
+
+representational state transfer
+é um estilo de arquitetura de software que define a implementação de um serviço web
+podem trabalhar com os formatos xml,json, ou outros
+
+vantagens 
+
+permite integração entre aplicações e tambem entre clientes e servidor em paginas web e aplicações
+utiliza dos metodos http para definir a operação que está sendo efetuada
+arquitetura de facil compreensão
+
+
+METODOS HTTP(são serviços funcionalidades que fazem parte do rest, eles tem que seguir isso para ser rest)
+
+get-solicita a representação de um recurso
+
+post-solicita a criação de um  recurso
+
+delete-solicita a exclusão de um recurso
+
+put-solicita a atualização do recurso
+
+
+API
+
+application programing interface
+
+conjunto de rotinas documentadas e disponibilizadas por uma aplicação para que outras possam consumir suas funcionalidades
+popular com serviços web
+as maiores plataformas de tecnologia disponibilizam APIs para acessos de suas funcionalidades, algumas delas são:facebook,twiter,telegram,whatsapp,github,google entre outras
+
+JSON
+
+javascript object notation 
+
+formatação leve utilizada para troca de mensagens entre sistemas
+usa se de uma estrutura de chave e valor e tambem de listas ordenadas
+um dos formatos mais populares e mais utilizados para troca de mensagens entre sistemas
+
+código de estado
+
+usado pelo servidor para avisar o cliente sobre o estado da operação solicitada
+
+1xx-informativo
+2xx-sucesso
+3xx-redirecionamento
+4xx-erro do cliente
+5xx-erro do servido
+----------------------------------------------------------------------------------------------------------------------------
+pros e contras monolito
+
+pros
+baixa complexidade
+monitoramento simplificado
+
+contra
+stack unica
+compartilhamento de recursos 
+acoplamento
+mais complexo a escalabilidade
+
+pros e contras microserviços#1
+
+pros
+stack dinamica
+simples escalabilidade
+
+contra
+acoplamento
+monitoramento mais complexo
+provisionamento mais complexo
+
+pros e contras microserviços#2
+
+pros
+stack dinamica
+simples escalabilidade
+desacoplamento
+
+contra
+monitoramento mais complexo
+provisionamento mais complexo
+
+pros e contras microserviços#3
+
+pros
+stack dinamica
+simples escalabilidade
+desacoplamento
+menor complexidade
+
+contra
+plataforma inteira depende do gerenciador de pipeline
+provisionamento mais complexo
+
+
+gerenciamento de erros
+
+onde é mais complexo
+processos assincronos (microsserviços#2)
+pipeline
+
+solução
+dead letter queue
+filas de re-tentativas
+
+------------------------------------------------------------------------------------------------------------------------
+iot(internet of things)
+
+internet - é uma rede de pessoas conectadas constantemente 
+
+internet of things - são coisas que não são pessoas acessando a rede e trocando informações constantemente
+
+		     são utilizados para receber dados e usar esses dados para outras coisas
+
+MQTT-é o protocolo(uma regra para que todos os dispositivos se comuniquem) de comunicação do iot
+
+base na pilha do tcp/ip
+protocolo de mensagem assincrona(você envia mais não aguarda a resposta)
+criada pela ibm para conectar sensores de pipelines de petróleo a satélites
+padrão oasis suportado pelas linguagens de programação mais populares
+
+as coisas são os equipamentos
+os dados são armazenados na nuvem
+e esses dados são utilizados para melhorias entre outras coisas
+
+smart building - é você pegar esses dados dos componentes de prédios e utilizar para algo inteligente
+
+smart home - é  parecido com o building, mas uma de suas diferenças é que ele preve a presença do morador da casa
+
+wearables - são coisas que a gente veste e que pegam dados de acordo com nosso dia a dia, utilizando esses dados para algo benefico
+
+agriculture - são coisas inteligentes usados para ajudar no meio agricola
+
+smart transportation - são veiculos inteligentes que ajudam no transito automatizando processos e fornecendo novas informações
+
+energy efficient - você coleta dados tanto de fontes de energia quanto pra fontes consumidores
+
+rfid supply chain - ajudam a automatizar os processos da empressa modificando a maneira de como tudo é feito
+
+
+coisas para pensar quando for procurar por um dispositivo inteligente
+
+baixo consumo de energia
+rede de dados limitados
+resiliencia
+segurança
+customização
+baixo custo
+
+exemplo de coisas que podem desenvolver iot
+
+ARDUINO
+
+plataforma de prototipagem
+entradas e saidas
+desenvolvido em c/c++
+interface serial ou usb
+shields
+
+pegar dados e ser confiavel tendo que garantir que ser executado você tera que usar embarcados
+
+MCUs
+
+micricintrolador de chip unico
+sistema operacional real time
+embarcado
+uso industrial,medico,militar,transporte
+
+minicomputadores
+
+RASPBERRY PI
+
+computador completo
+hardware integrado em uma unica placa
+roda só linux ou windows
+uso domestico e comercial
+
+
+
+NIVEIS DE MENSAGEM
+
+QoS 0
+
+nivel minimo de esforço
+sem garantia de entrega
+mensagem não é retransmitida
+custa menos em recursos
+
+QoS 1
+
+garante que a mensagem foi entregue no minimo uma vez ao recebedor
+mensagens podem ser retransmitidas se não houver confimação de entrega
+nivel médio
+
+QoS 2
+
+garante que a mensagem foi entregue no minimo uma vez ao recebedor
+mensagens podem ser retransmitidas se não houver confimação de entrega
+aumentar a eficiencia
+informa ao client(sistema) que a mensagem foi entregue
+nivel mais caro
+
+CLOUD 
+
+o objetivo principal da iot é coletar os dados e armazena los, tendo como uma das principais funções
+usar esses dados para trazer mais beneficios
+
+grande e cada vez mais devices conectados
+tbs(terabytes) ou pbs(perabytes) de informação
+potencial de escala global
+
