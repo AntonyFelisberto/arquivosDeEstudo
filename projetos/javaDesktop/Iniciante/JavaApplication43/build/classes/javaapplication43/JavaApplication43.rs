@@ -1,2 +1,0 @@
-javaapplication43.ssd
-javaapplication43.JavaApplication43

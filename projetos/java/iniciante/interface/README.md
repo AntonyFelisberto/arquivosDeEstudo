@@ -1,2 +1,0 @@
-# interfacesJava
- usando interfaces
