@@ -1,0 +1,10 @@
+https://www.mysql.com/
+https://dev.mysql.com/doc/
+https://www.postgresql.org/
+https://www.postgresql.org/docs/manuals
+https://www.microsoft.com/en-us/sql-server/sql-server-2019
+https://docs.microsoft.com/pt-br/sql/sql-server/?redirectedfrom=MSDN&view=sql-server-ver15
+https://www.oracle.com/
+https://docs.oracle.com/en/
+http://www.firebirdsql.org/
+http://www.firebirdsql.org/en/documentation/
