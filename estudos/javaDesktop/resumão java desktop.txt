@@ -1,0 +1,134 @@
+biblioteca necessária pra usar o sql
+
+mysql connector
+pra adicionar é só ir em bibliotecas botão direito e adicionar jar
+
+
+DriverManager é responsavel por estabelecer a conexão com o banco de dados
+Connection-é responsavel por manter a conexao com o banco aberta
+
+import java.sql.Connection;		->é responsavel por manter a conexao com o banco aberta
+import java.sql.DriverManager;		->é responsavel por estabelecer a conexão com o banco de dados
+import java.sql.Statement;              ->envia os dados sem parametro para o banco de dados
+import java.sql.PreparedStatement;	->recebe parametros para a inserção do banco de dados
+import java.sql.ResultSet;		->é necessário para retirar informações do banco de dados
+import java.util.ArrayList;		->reponsavel pelo array que recebe e lista os dados
+import MODEL.Dados;                     ->pacote onde estão todos os dados guardados
+
+
+controles swing
+jlabel-		pra colocar titulos
+jtextfield-	pra receber valores do usuário
+jbutton-	pra executar uma ação
+jpassword-	pra receber valores mas sem mostrá lo
+jtable-         tabela que lista os dados
+jdesktoppainel  pra abrir uma tela extra
+jmenubar        barra de menu (pra adicionar um meno é só clicar com o botão direito e adicionar menu)
+                              (caso queira colocar um subtópico no menu você clica com o botão direito em cima do item do menu,clica em adicionar paleta,item de menu)
+                              (se quiser vincular um evento no subtópico é só clicar duas vezes ou com o botão direito eventos->action->action performed 
+
+actionperformed ->responsavel por executar as ações
+
+-------------------------------------------------------------------------------------
+fazer set e get
+
+private tipovar nomevar;                   private int numero;
+public void setDados(tipovar nomevar){     public void setDados(int numero){       
+       this.nomevar=nomevar;                   this.numero=numero;
+}                                          }
+
+public tiporetorna getDados(){             public int getDados(){
+        return nomevar;                         return numero;
+}                                          }
+
+-------------------------------------------------------------------------------------
+fazer vetores e matrizes em java
+    private float caca[][]=new float[10][10];
+    private int cara[]=new int[50];
+
+  usar em metodos
+    public float[][] getCaca() {
+        return caca;
+    }
+
+    public void setCaca(float caca[][]) {
+        this.caca = caca;
+    }
+
+    public int[] getCara() {
+        return cara;
+    }
+
+    public void setCara(int cara[]) {
+        this.cara = cara;
+    }
+-------------------------------------------------------------------------------------
+pegar valores dos campos
+
+tipovar nomevar = this.nomedavarJtext.getText();    se não for do tipo texto você tem que converter o valor
+JOptionPane.showTipodacaixa(null,"o que aparece na caixa","titulo dela",
+nomedavarJtext.setText(""); 	faz com que o campo receba o valor que você colocar nas aspas no caso vazio
+
+String nome = this.JtextField.getText();  
+long nome = Long.ParseLong(this.JtextField.getText());
+JOptionPane.showTipodacaixa(null,"olá e seja bem vindo","boas vindas",JOptionPane.tipodacaixa);
+nomedavarJtext.setText(""); 
+
+caso queira mostrar valor de outras variaveis é só concatenar tudo em uma string e depois mandar no joption
+String nome="ola senhor "+name+"sua idade é "+idade+"espero que"...........;
+JOptionPane.showmessage(null,nome,"titulo dela",JOptionPane.WARNING_MESSAGE);
+
+----------------------------------------------------------------------------------------
+criar classe principal e chamar a tela
+
+public static void main(String[]args){
+     nomedoform nomedachamada=new nomedoform();
+     nomedachamada.setVisible(true);
+
+     tela nome=new tela();
+     nome.setVisible(true);
+
+}
+-------------------------------------------------------------------------------------------------------
+			adicionar jinternalframe na tela
+
+pra isso você tem que tem criado o jinternalframe e ter colocado um jdesktoppanel no seu jframe
+
+formFuncionario fun=new formFuncionario();//criando um objeto pra chamar o jinternalframe
+areaPrincipal.add(fun);//faz com que a variavel do painel da area de trabalho adicione nela a tela do internaljframe
+fun.setVisible(true);//chama o form que é o form jinternal frame
+fun.show();//chama o form que é o form jinternal frame 
+
+nomejinternalframe  nomechamada=new jinternalframe ();//criando um objeto pra chamar o jinternalframe
+nomedoseuJdesktoppanel.add(nomechamada);//faz com que a variavel do painel da area de trabalho adicione nela a tela do internaljframe
+nomechamada.setVisible(true);//chama o form que é o form jinternal frame
+nomechamada.show();//chama o form que é o form jinternal frame
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

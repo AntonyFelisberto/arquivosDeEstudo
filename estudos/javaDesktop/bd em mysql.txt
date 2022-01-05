@@ -1,0 +1,8 @@
+create table tb_funcionario 
+( 
+id int primary key AUTO_INCREMENT, 
+nome varchar(100), 
+email varchar(100), 
+senha varchar(20), 
+cargo varchar(50) 
+)

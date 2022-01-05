@@ -1,0 +1,2 @@
+nas bibliotecas clique com o botão direito->adicionar biblioteca->driver do java db
+nas bibliotecas clique com o botão direito->adicionar jar->dai é so colocar sua nova biblioteca baixada
