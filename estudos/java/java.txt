@@ -1,0 +1,265 @@
+	BYTECODE
+
+é o código originado da compilação de programas java
+é o programa interpretado e executado pela jvm maquina virtual java
+
+	JVM
+
+uma maquina virtual é um software que simula uma maquina fisica
+é uma maquina virtual que executa os programas java, independente do sistema operacional
+a jvm le o bytecode e consegue compilalo fazendo com que consiga ser lido em qualquer linguagem
+
+	JRE
+
+java runtime enviromente é a parte responsavel pela execução do software, é ele que roda tudo que é necessário pro java
+
+	java SE
+
+java standand edition é a distribuição minima da plataforma para desenvolvimento de aplicações java
+
+	java EE
+
+java enterprise edition é uma extensão do java SE que possui suporte a sistemas corporativos
+possui diversas expecificações de partes da infra estrutura como acesso ao banco de dados,mensageria,serviços web,parser de arquivos e outras
+
+	jakarta EE
+
+com a falta de investimento da oracle no java, ela cedeu todo o código, 
+implementações especificações do java ee para o eclipse foundation,
+como o nome java ee é uma marca registrada foi escolhido o nome jakarta ee
+--------------------------------------------------------------------------------------------------------------------------------------------
+				JAVA-PARADGIMA FUNCIONAL
+
+é o processo de construir software atraves de composição de funções puras,evitando compartilhamento de estados, dados mutaveis e efeitos colaterais.é declarativa ao inves de imperativa
+
+paradgima imperativo:expressa o codigo atraves de comandos ao computador nele é possivel ter controle de estados dos objetos
+
+paradgma funcional damos uma regra uma declaração de como queremos que o programa se comporte
+
+Composição de funções é criar uma função atraves de composição de outras
+
+IMUTABILIDADE objetos e vartiaveis não podem ser alterados
+--------------------------------------------------------------------------------------------------------------------------------------------
+				LAMBDAS
+
+lambdas obedecem o conceito de paradigma funcional
+facilitam legibilidade do código
+com a nova api funcional do java se tem uma alta produtividade para lidar com objetos
+deve se entender de interfaces
+
+interfaces funcionais:são interfaces que possuem apenas um método abstrato
+
+public interface nomefuncao{
+ String gerar(String valor);
+
+}
+
+
+geralmente possuem uma anotação em nivel de classe @funcionalInterface para forçar o compilador a apontar um erro se a interface não estiver de acordo com as regras de interfaces funcionais
+
+geito de fazer lambda
+
+interface variavel=parametro->logica
+
+quando a lambda possui apenas uma instrução não é necessária chaves mas quando tem mais de uma instrução é necessario o uso do return e de chaves
+
+
+public class InterfaceFuncional {
+	public static void main(String[] args) {
+        	funcao operar=valor->valor;      //interface variavel=parametro->logica
+ 						 //funcao operar=valor->valor+15;
+              //nome da sua lambda//mesmo nome inserido na interface
+                   //nome da variavel|é ele que é usado na chamada
+                             //criação da variavel
+
+		funcao operar=valor->(
+
+		)
+    }
+    
+}
+@FunctionalInterface                                //toda vez que você tentar colocar mais de um metodo dentro da interface a functional vai dizer que isso é errado e vai te avisar
+interface funcao{                                   //você só usa uma lambda na interface
+    String operar(String valor);
+   // default Integer opere(String valor){}
+}
+-------------------------------------------------------------------------------------------------------------------------------------------
+				Classes Interfaces
+
+métodos abstratos
+
+	Devem ser implementados por todos
+	novos metodos quebram as implementações
+
+métodos default
+	são herdados a todos que implementam
+	novos métodos não quebram implementações
+
+herança multipla
+--------------------------------------------------------------------------------
+				Funções de alta ordem
+
+por parametro recebem uma função por parametro ou retornam 1uma função por parametro
+
+---------------------------------------------------------------------------------------------------
+				Recursividade
+
+um método chamar a si mesmo varias vezes com parametros ou sem
+----------------------------------------------------------------------------------------------------------------------------------
+		NEGAR IGUALDADES EM JAVA
+
+if(!N==0){
+
+}else if(!N==10 || !A.Equals('oi')){}
+
+
+O ! É QUEM NEGA O RESULTADO, OU SEJA SE n for Diferente de 0
+----------------------------------------------------------------------------------------------------------------------------------------
+BufferedReader nomeação=new BufferedReader ();                                {
+									      {armazena os dados dentro de um buffer
+BufferedReader nomeação=new BufferedReader (new InputStreamReader(System.in));{
+
+stringtokenizer nomeação= new stringtokenizer(br.readline());{
+							     {facilita a entrada de dados,
+stringtokenizer nomeação=new stringtokenizer();	     	     {
+stringtokenizer st=new stringtokenizer();	             {st.nextToken é utilizado para recuperar o próximo numero
+
+---------------------------------------------------------------------------------------------------------------------------
+var
+
+ quando você declara como var a variavel que recebe um valor o próprio java já identifica o tipo que ele é
+
+var nome;//errado pois precisa receber um valor
+var i=NULL;//errado pois precisa receber um valor
+
+
+var nomevariavel=valor;
+var i=20;
+var s=new metodo();
+var nomeMetodo=new nomeClasse();
+var s=new metodo(valor);
+var n=metodo();
+
+static
+
+quer dizer que a variavel vai continuar com um valor até que o programa seja desligado
+tambem é utilizada em metodos
+ex:
+
+static tipo nome;
+
+static int idade;
+
+idade=0;
+idade=idade+1; as variaveis podem ser alteradas mais o valor não vai ser apagado até que você desligue o programa
+
+
+const
+
+o valor que está em uma variavel não pode ser alterado a menos que seja essa constante seja um objeto ai você pode inserir mais valores
+
+exemplo
+
+const idade=20; esse valor não pode ser alterado
+
+
+final
+
+ele deixa a classe como uma classe final, ela não podera ser herdada por mais nenhuma
+outra classe porque ela já é especifica
+
+public final class{
+
+}
+
+você pode fazer metodos nessa classe e fazer ela receber metodos de outras classes usando extend
+
+já nas variavel se usa o final para atributos que nunca vão mudar ou seja vão continuar pra sempre aquele valor
+
+final tipo nomevar;
+-------------------------------------------------------------------------------------
+
+BigDecimal(trabalhar com floats) ou BigInteger(trabalhar com inteiros)
+
+eles são usados quando você quer trabalhar com exatidão dos resultados
+
+
+BigDecimal nomevar=new BigDecimal();
+BigDecimal nomevar=new BigDecimal(valor);
+
+nomevar.metodos
+
+BigInteger nomevar=new BigInteger();
+BigInteger nomevar=new BigInteger(valor);
+
+nomevar.metodos
+----------------------------------------------------------------------------------------------------------------------
+					Abstract,
+
+Abstract esse modificador não é aplicado nas variaveis,apenas em classes e métodos.uma classe abstrata não pode ser instanciada.se houver alguma declaração de metodo como abstract a classe deve ser marcada como abstract
+
+
+----------------------------------------------------------------------------------------------------------------------
+javadoc
+
+tags 		elas são definidos em comentarios
+/**
+*@author-nome	especifica quem criou o metodo
+*@deprecated	identifica classes ou metodos obsoletos
+*@link		link para outro documento ou url
+*@param		descreves os parametros que são passados pros métodos
+*@@return	descreve o tipo de retorno de um método
+*
+*/
+-----------------------------------------------------------------------------------------------------------------------
+				protected,public e private
+
+public pode ser acessada de qualquer lugar de qualquer classe
+
+private os métodos e atributos da classe declarados como private não podem ser acessados ou usados por nenhuma outra classe esses atributos e métodos também não podem ser visualizados pelas classes herdadas
+
+protected torna o membro acessivel as classes do mesmo pacote ou atraves de herança, seus membros herdados não são acessiveis a outras classes fora do pacote em que foram declaradas
+
+-----------------------------------------------------------------------------------------------------------------------
+				TRY,CATCH,FINALLY
+
+try{  			isso tenta executar o que você quer que aconteça, se usa somente 1 catch
+
+código;
+
+}catch(){		significa que caso a tentativa der errado ele vai executar outra ação no caso o catch, você pode usar varios catch
+
+código;
+
+}catch(){		() tipo de exceção
+
+código;
+
+}catch(){
+
+código;
+
+}cat......
+
+código;
+
+}finally{		depois de tudo ser executado o finally é executado para concluir tudo
+
+  codigo
+
+}
+
+		THROWS E THROW (VÃO DENTRO DE CATCHS OU FINALLY)
+throws: é a  assinatura do metodo que sera retornado caso ocorra erro para o método que fez a chamada
+dentro de um fluxo encadeado 
+
+throw: é usado para lançar exceções desejadas, juntamente com mensagem de erro para o método que fez a chamada
+-----------------------------------------------------------------------------------
+
+LAMBDA
+
+lambda obedece o conceito de paradgma funcional como eles podemos facilitar legibilidade e ter uma alta produtividade para lidar com objetos
+
+primeiro tem que se entender de interface funcional,pois as lambdas tem que estar entrelaçados a elas
+
+interfaces 

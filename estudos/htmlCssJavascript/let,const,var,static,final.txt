@@ -1,0 +1,64 @@
+static
+
+quer dizer que a variavel vai continuar com um valor até que o programa seja desligado
+
+ex:
+
+static tipo nome;
+
+static int idade;
+
+idade=0;
+idade=idade+1; as variaveis podem ser alteradas mais o valor não vai ser apagado até que você desligue o programa
+
+----------------------------------------------------------------------
+const
+
+o valor que está em uma variavel não pode ser alterado a menos que seja essa constante seja um objeto ai você pode inserir mais valores
+
+exemplo
+
+const idade=20; esse valor não pode ser alterado
+------------------------------------------------------------------------------
+let
+ a variavel fica muito mais definida, quando você deixa uma variavel como let ela só funciona dentro de um bloco comum
+
+exemplo
+
+let ods=10
+
+function ase(){
+   let ods=11;		a variavel fica com o mesmo valor que ela está
+   console.log(ods);    vai exibir 11
+}
+console.log(ods);       vai exibir 10
+
+------------------------------------------------------------------------------
+var
+
+a variavel não fica com um unico valor em cada um dos parametos pois ela é como se fosse global
+
+exemplo 
+
+var ods=10
+
+function ase(){
+   var ods=11;		a variavel não vai ficar com o mesmo valor de anteriormente
+   console.log(ods);    vai exibir 11
+}
+console.log(ods);       vai exibir 11
+------------------------------------------------------------------------------
+final
+
+ele deixa a classe como uma classe final, ela não podera ser herdada por mais nenhuma
+outra classe porque ela já é especifica
+
+public final class{
+
+}
+
+você pode fazer metodos nessa classe e fazer ela receber metodos de outras classes usando extend
+
+já nas variavel se usa o final para atributos que nunca vão mudar ou seja vão continuar pra sempre aquele valor
+
+final tipo nomevar;
