@@ -1,0 +1,12 @@
+<tag placeholder="nome">
+
+placeholder=Pra deixar um texto aparecendo quando o Input estiver vazio
+
+
+alt + shift + f == > auto Indent
+
+
+css
+
+dica de ouro, atualiza no navegador com ctrl + shift + r  pra ele 
+resetar tudo toda vez que vc atualizar o CSS. 

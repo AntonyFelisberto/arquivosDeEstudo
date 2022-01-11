@@ -1,0 +1,16 @@
+ (!x.equals(null) && !y.equals(null))
+
+
+sites pra aprender
+
+poo
+https://www.devmedia.com.br/orientacao-a-objetos-simples-assim/3254
+https://docs.oracle.com/javase/7/docs/api/java/sql/ResultSet.html
+https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html
+
+
+https://www.caelum.com.br/apostila-java-web/
+
+https://www.youtube.com/watch?v=U3LAlcHo8to&list=PLS7ijbHHSrdnE_6U7cOY3zAkJqypfSRup
+
+https://db.apache.org/derby/derby_downloads.html
