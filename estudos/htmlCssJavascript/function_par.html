@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funções JS - Conversor</title>
+</head>
+<body>
+	<h1>Conversor de medida</h1>
+	<h2>Polegada para centímetros</h2>
+	<p>Digite um valor em polegadas para converter em centímetros</p>
+	<label for="polegadas">Polegadas</label>
+	<input id="polegadas" type="number" placeholder="Polegadas"
+	oninput="convertPol(this.value)" 
+	onchange="convertPol(this.value)">
+
+	<p>O valor digitado em cm é: <span id="out"></span></p>
+
+
+	<script type="text/javascript">
+		function convertPol(pol){
+			document.getElementById('out').innerHTML= pol*2.54;
+		}
+	</script>
+</body>
+</html>
