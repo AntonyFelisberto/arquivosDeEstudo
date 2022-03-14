@@ -1,0 +1,134 @@
+ir no site
+
+(criar conta microsoft)
+
+iniciar ou com conta microsoft ou com github
+
+quando entrar em almost done vai estar
+
+NAME YOUR AZURE DEVOPS ORGANIZATION 
+
+dev.azure.com/ aquiVoceVaiApagarOQueEstavaAntesEEscreverONomeDoSeuDominio
+
+regiao
+
+depois vaientrar pra criar o nome do projeto e definir se é publico ou privado, o numero maximo é 5 usuarios
+
+da pra criar um novo projeto depois clicando em new project  (clicando em advanced da pra voce escolher ferramenta de versionamento e um template (basic é o normal))
+
+
+extensoes: qualquer desenvolvedor ou usuario pode criar experiencias integradas de primeira classe ou seja construir algo
+
+integração:link entre o azure e outros aplicativos como gitlab, github, office etc
+------------------------------------------------------------------------------------------------------------
+REPOS
+	file: só pra clonar o codigo
+	       clone:copia o link/copia username/copia password
+	       la em cima onde fica o simbolo da arvore branch você escolhe qual código quer clonar
+	pull request:serve pra voce enviar as informações de um repos pra outro
+		     new pull request:overview (titulo, descrição da mudança e acrescentar pessoas que vão revisar, alem de confirmar o pull request em create)	  
+				      file     (ve o que foi alterado)
+				      commit   (commits feitos)
+				      em uma flecha de vai e volta la em cima voce inverte o que vai enviar pelo que vai receber a mudança   
+	pull request nomeDoProjeto:caso tenha feito uma pull request ele aparece aqui
+------------------------------------------------------------------------------------------------------------
+PIPELINES
+
+ 	conjunto de etapas e tarefas que o processo de build deve concluir para que o código seja construido com exito
+
+	(criar pipeline:pipelines,create pipeline,dizer onde esta hospedado o codigo (podendo clicar em use the classic editor para ver mais opções selecionalas clicar em contine e após isso selecionar um template ou pode procurar digitando na barra de procura o nome da sua linguagem)
+
+	para rodar uma pipeline:vai em pipeline,selecione qual voce quer,run pipeline,vai escolher o agent pool(se ja tiver não precisa) e na branch tag vai escolher qual branch vai rodar no pipeline
+
+	ao clicar em uma pipeline ja criada voce pode ir em jobs e clicar nele que aparece as etapas de construção
+
+	ao clicar em uma pipeline ja criada voce pode ir em NUMERO published pra ver o que foi dropada na build
+
+	YAML:uma linguagem de serialização de dados legivel por humanos que é comumente usada para arquivos de configuração
+	
+	RELEASE: uma coleção de ambientes que pode conter uma ou mais tarefas, voce sobe pra um ambiente
+		 pra rodar uma nova voce vai em release, new pipeline,nisso libera alguns templates (caso não saiba usa o primeiro), apos o template vai aparecer pra nomear os stages da aplicação,add a artefact que é o que gera após a build mas voce pode mudar e no sinal de raio se voce clicar vai aparecer uma tela onde podera ativar o continnuous deployment(o processo vai continuar automaticamente),caso algo esteja em vermelho nas letras clique nelas e veja quais configurações faltam
+		 antes de poder entregar o codigo existem algumas configurações necessarias,para isso entre em: 
+
+                 https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?redirect_uri=https%3A%2F%2Fportal.azure.com%2Fsignin%2Findex%2F&response_type=code%20id_token&scope=https%3A%2F%2Fmanagement.core.windows.net%2F%2Fuser_impersonation%20openid%20email%20profile&state=OpenIdConnect.AuthenticationProperties%3D833LKI0cvGKlUKhGQ9ig_w7ZqevEux1iTSSPLWAosD0TQkkPVUBP4U9Id_YqqTlH2-TmNcmYF0p0EoJoSa4I2Hzs25IVNs2edW6RKeXFZTrsrQSZTKCFNowv73hzC05PlmaWtCuNR4kaJwEbzM8SLzp9c0awZ5n4MOdNVRMe7i6SPinQGlgrF7-8QsyQnxdGxl9yjVGNwt_a50xSvAcd9eedn28KJLllNPWVFpaA6wzhH4MvvBU6byWpMWmJO_dNgw8s0sdpeNouT1lzYSVYKodCmBMHMt_bJYRmqfPcEDCEBgZe4XGnWmo-O4qFLLSfZr-fNuU_TW0VJq5k7AwDtfoilzGjv0pDLQ4aGly-baedVsPpRbBmSwWsTEWv5afqT2I8D1aXWjwmZV3cvRqiUA&response_mode=form_post&nonce=637822522039826074.ZDY3NmMwMDgtMjk2My00MjQxLTk5Y2UtYTFmZGFiMWFkNjhmMDU3NzNkMmYtMDE1YS00M2FmLWI0ZmQtOWVlMmIzNjU2NGVi&client_id=c44b4083-3bb0-49c1-b47d-974e53cbdf3c&site_id=501430&client-request-id=cd581fe1-0417-4430-8251-beb7b4d5122b&x-client-SKU=ID_NET472&x-client-ver=6.12.2.0
+
+		 para criar a conte é :(1 mes gratis)
+
+		 https://www.google.com/search?q=azure.com+free&rlz=1C1FCXM_pt-PTBR992BR992&oq=azure.com+free&aqs=chrome.0.0i19j0i19i22i30l3j69i58j69i60l3.14532j0j7&sourceid=chrome&ie=UTF-8
+
+
+AZURE PIPELINES 
+
+	para incluir voce tem que ir em project setings,service connections,create service connection e escolher a conexao
+
+GERENCIAMENTO DE RELEASES
+
+	processo usado para impulsionar o desenvolvimento ,teste,inplantação e suporte de versões de software
+
+CONTINUOUS INTEGRATION
+
+	capacidade de criar e gerenciar processos de compilação que compilam e testam automaticamente seus aplicativos na nuvem
+
+	confiança de que alterações de codigo se integram bem a outras alterações mescladas
+
+	se a compilação falhar, uma ferramenta unificada ajudara as equipes a identificar código mesclado com problemas
+
+agente de compilação
+
+	item encarregado de criar,compilar,testar e implantar seu código na nuvem
+-------------------------------------------------------------------------------------------------------------
+BOARDS
+
+work itens:é usado para rastrear os trabalhos
+     voce pode clicar em new work item para criar um novo processo
+     ORDEM:
+	   1-epicos são os niveis mais altos podendo abranger varios tipos de entrega
+	   2-features são usados para determinar objetivos para um unico sprint      (features represerntam somente uma parte do código)
+	   3-stories que dividem os recursos em peças de trabalhos independentes
+	   4-tarefas fornecem informações adicionais para historias e são usadas para o planejamento da capacidade
+     BUGS:
+	   são tratados como stories ou tarefas do usuario e representam problemas do produto
+boards:
+     é o kanbam
+	CONFIGURAÇÃO:
+		em boards project configuration voce pode clicar em uma sprint e definir sua duração
+
+
+backlog:
+	lista priorizada de recursos que contem descrições breves da funcionalidade desejada do produto
+	voce clica em new work item pra criar novo processo e cricar em sprint pra criar uma dizendo sua duração
+	clique no simbolo de configurações e marque o épico
+	quando voce cria uma feature voce pode clicar no +, product backlog item (digitar as informações) e salvar, depois selecionar o +, e adicionar informações que no caso aqui esta sendo criado as tarefas para os desenvolvedores
+	voce pode arrastar esses itens criados para sua sprint
+sprints:
+	periodo de tempo durante o qual um trabalho especifico deve ser concluido
+	chamado de iteração
+	capacity voce diz a tarefa da pessoa(activity) e o quanto de tempo ela esta fora dessa sprint(days off) e tambem o numero de horas que pode trabalhar por dia(capacity per day)
+		dai em backlog perto do simbolo do funil(filtro) voce vai clicar noi que parece pra aumentar volume(view option) nisso voce pode ver o work details,planning e show totals
+
+QUERIES
+	conjunto de clausulas que ajudam a encontrar itens de trabalho que um usuario pode revisar, triar, atualizar ou listar em relatorio
+------------------------------------------------------------------------------------------------------------------------------------
+TEST PLANS
+ executa testes na aplicação
+ os planos de teste agrupam test suites e casos de test cases individuais. os planos de teste incluem static test suites, requirement-based suites e query-based suites
+ os testes suites agrupam os test cases em cenarios de testes separados em um unico plano de teste, o agrupamento de casos de teste facilita a visualização de quais cenarios estão completos
+ os test cases validam partes individuais da implantação do seu código ou aplicativo. voce pode garantir que seu código funcione corretamente, não tenha erros e atenda aos requisitos de negocio de clientes. voce pode adicionar test cases individuais a um plano de teste sem criar um test suit, se desejar
+    voce tem que pagar os testes mais pode pegar um free por 30 dias
+ TEST CASES:
+ 	pra fazer teste voce vai em test plans,new test case (informa o titulo e os passos de cada teste(a ação e o resultado), voce pode ir em associet automation(e associar a aplicação de test),save e close)
+ 	pra executar vai em execute marca a aplicaçao e seleciona o tipo de run, ai vai abrir uma tela pra voce fazer marcações e anotações
+ 
+ RUNS:voce ve o que foi executado
+ PROGRESS REPORT:voce ve como esta o processo de teste a partir de graficos e planilhas
+----------------------------------------------------------------------------------------------------------------------------
+integrar outros apps no azure 
+
+primeiro ir em apps(nele voce pode instalar qualquer extensão) 
+
+teams:instalar a extensão azure boards, apos isso voce pode clicar em open e escolhe o teams,escolhe o diretorio,add subscription (seleciona o tipo de notificação),pra executar um comando digite @Azure Boards e aparece os comandos
+
+tambem tem o marketplace(extensoes) criada por outros desenvolvedores:
+
+clique no simbolo de sacola de compras,browse marketplace(adquirir) ou manager(ver as que ja tem)
+  
