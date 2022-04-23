@@ -1,0 +1,16 @@
+============= Página de Login ===================
+Modificar o settings.py
+Modificar urls.py (projeto_web)
+Criar a pasta registration dentro de templates/hello_world
+Criar login.html
+============= Página de Cadastro ================
+Modificar urls.py: adicionar rota (projeto_web)
+Criar a classe SignUpView em views.py
+Adicionar rota "signup/" em urls.py (app hello_world) (não esquecer dos imports)
+modificar o layout.html para exibir o link de logout e login para
+	logados e não logados respectivamente
+============= Página de Esqueci a senha =========
+Criar password_reset_form em registration
+Adicionar o link o layout.html se o usuário não estiver logado
+Adicionar código em settings.py sobre qual é a forma de envio dos e-mails 
+	e aonde ficarão armazenados os e-mails enviados

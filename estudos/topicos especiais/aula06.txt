@@ -1,0 +1,22 @@
+criar uma pasta vazia
+abrir a pasta no vscode
+ctrl + shift + p e digitar python:select interpreter
+escolher o interpretador do .venv
+
+abrir o cmd - command prompt 
+clicar na setinha do lado do maiszinho)
+NÃO É O POWERSHELL
+
+py -3 -m venv .venv
+.venv\Scripts\activate
+pip install django
+django-admin startproject projeto_web
+
+cd projeto_web
+python manage.py migrate (cria um sqlite)
+python manage.py runserver
+entrar em http://127.0.0.1:8000
+
+python manage.py startapp hello_world
+modificar o hello_world/views.py
+modificar o projeto_web/urls.py

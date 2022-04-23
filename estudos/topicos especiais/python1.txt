@@ -1,0 +1,76 @@
+import math
+
+def main():
+    nome=str(input("digite seu nome:"))
+    return nome
+   
+def switch(nome):
+    if nome=="antony":
+        print("ola {}".format(nome))
+        print(f'{len(nome)}')
+   
+class ouro:
+    idade=[19,11,30]
+
+
+np.array (50)
+nome=main()
+switch(nome)
+out=[]
+
+for i in range(0,3):
+    print()
+
+
+
+#vetor=[]
+
+#for i in range (0,10):
+    #vetor.append(str(input("digite um valor")))
+
+continuar=False
+while continuar==False:
+    #a
+    numeroPosicaoUm=int(input("digite o primeiro numero :"))
+    numeroPosicaoDois=int(input("digite o segundo numero :"))
+    print("a soma do primeiro e segundo numero é {}".format(numeroPosicaoUm+numeroPosicaoDois))
+    #b
+    print("a multiplicação do primeiro e segundo numero é {}".format(numeroPosicaoUm*numeroPosicaoDois))
+    #c
+    print("primeiro numero ao quadrado  :{}".format(math.pow(numeroPosicaoUm,2)))
+    print("segundo numero ao quadrado :{}".format(math.pow(numeroPosicaoDois,2)))
+    #d
+    maca=int(input("digite a quantidade de maças :"))
+    print("a quantidade de maças é {}".format(12.20*130*maca))
+    #e
+    notaUm=float(input("digite a primeira nota :"))
+    notaDois=float(input("digite a segunda nota :"))
+    print("media aritmetica {:.2f}".format((notaUm+notaDois)/2))
+    #f  horas[4]
+    horasTrabalhadas=[]
+    total=0
+    salarioPorHoras=float(input("digite o salario por hora:"))
+    for i in range (0,4):
+        horasTrabalhadas.append(int(input("digite a hora trabalhada na {} semana:".format(i))))
+        total=total+horasTrabalhadas[i]
+    total=horasTrabalhadas*salarioPorHoras    
+    #g    distancia/quantidadeDeCombustivelGastaEmLitros
+    quantidadeDeCombustivelGastaEmLitros=float(input("digite a quantidade gasta em combustivel :"))
+    distancia=float(input("digite a distancia percorrida"))
+    print("a eficiencia é :{}".format(distancia/quantidadeDeCombustivelGastaEmLitros))
+   
+    #h
+    i=1
+    while i<3:
+        litros=float(input("digite a quantidade em litros :"))
+        preco=float(input("digite o preço :"))
+        print("o total de valor por km rodado é {:.2}:".format(litros/preco))
+        i=i+1
+    #i
+"""
+quantidadeDeFuncionarios=int(input("digite a quantidade de funcionarios:"))
+nomeCandidatoAVaga=[]
+for i in range (quantidadeDeFuncionarios):
+    nomeCandidatoAVaga.append(str(str.upper(input("digite o nome do funcionario:"))))
+for i in range (quantidadeDeFuncionarios):
+    print(nomeCandidatoAVaga[i])

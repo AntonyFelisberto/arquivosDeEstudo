@@ -1,0 +1,46 @@
+print ("lists,tuples,sets,dictionaries")
+lista=["batman","a volta dos que não foram","fogo na caixa d´ agua"]
+
+lista.clear()
+lista.append("homen aranha")
+lista.extend(["homem aranha","dark souls","donnie darko"])
+lista.insert(1, "shang chi")
+print(lista)
+print(lista[1])
+print(len(lista))
+print(lista.count("batman"))
+print(lista.pop())
+print(lista)
+lista.remove("shang chi")
+print(lista)
+lista.reverse()
+print(lista)
+listaBackup=lista.copy()
+print(listaBackup)
+print(type(listaBackup))
+
+
+matriz=[[],[],[],[]]
+
+
+
+vetor=[3,6,5,4,11,7,8,99]
+vetor.sort()
+listaBackup.remove(listaBackup[0])
+listaBackup=lista[1:]
+#pega os itens da posição 1 pra frente, lembrando que sempre começa em 0
+listaBackup=lista[:len(lista)-1]
+listaBackup[:len(lista)-1]
+print(listaBackup[1:3])
+#exibe do 1 até o 3 posição, lembrando que sempre começa em 0
+
+listaBackup *=2
+print(max(listaBackup))
+print(sum(vetor))
+print(min(listaBackup))
+print(max(vetor))
+print(min(vetor))
+listaBackup +=[1,2,3,4,5,5]
+vetor.remove(vetor[0])
+print(vetor.index(99))
+

@@ -1,0 +1,25 @@
+Templates e páginas estáticas
+nome do projeto: projeto_web
+nome da aplicação: hello_world
+
+adicionar em projeto_web/settings.py a linha hello_world em
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'hello_world',
+]
+
+Dentro de hello_world criar uma pasta chamada templates
+Dentro de templates, criar uma pasta chamada hello_world
+Na pasta criar um arquivo ola.html e criar um html
+em views.py criar a funcao ola
+em urls.py (hello_world) criar a rota ola
+
+formatos de data:
+https://docs.djangoproject.com/en/4.0/ref/templates/builtins/#std:templatefilter-date
+
+modificar urls.py do projeto_web

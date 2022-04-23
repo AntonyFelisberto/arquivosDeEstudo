@@ -1,0 +1,23 @@
+======= Enviar mensagens =========
+abrir o hello_world/models.py
+criar a class LogMessage
+executar no terminal python manage.py makemigrations
+executar no terminal python manage.py migrate
+
+criar o forms.py
+em forms.py criar a classe LogMessageForm
+Modificar o contato.html e inserir o formulário
+(opcional) modificar o .css (input[name=message])
+modificar em views.py o método contato
+
+====== Exibir as mensagens =======
+criar a rota mensagens.html (adicionar rota em urls e criar função em views)
+modificar o layout.html para adicionar o link
+modificar mensagens.html
+(opcional) modificar o .css
+adicionar o import de ListView em views
+criar classe HomeListView em views
+modificar a urls.py - importar LogMessage
+
+
+
